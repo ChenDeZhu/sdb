@@ -1,0 +1,49 @@
+{include file="public:header" /}
+<div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i><a href="{:url('Index/index')}">首页</a><span class="crumb-step">&gt;</span><a class="crumb-name" href="{:url('Article/index')}">文章管理</a><span class="crumb-step">&gt;</span><span>添加文章</span></div>
+        </div>
+        <div class="result-wrap">
+            <div class="result-content">
+                <form action="{:url('Article/add')}" method="post" id="myform" name="myform" enctype="multipart/form-data">
+                   
+                    <table class="insert-tab" width="100%" border="1">
+                        <tbody>
+                       
+                            <tr>
+                                <th width="80">栏目：</th>
+                                <td>
+                                    <select name="catid">
+                                    <option value="0">选择栏目</option>
+                                    {volist name='list' id='vo'}
+                                    <option value="{$vo.catid}" {if condition="$vo['catid'] eq $catid"}selected="selected"{/if}>{:str_repeat("&nbsp;└─&nbsp;",$vo['level'])}{$vo.catname}</option>
+                                     {/volist}
+                                    </select>
+                                </td>
+                            </tr>
+                            {volist name='forminfos' id='vo'}
+                            <tr>
+                                <th>{$vo['name']}：</th>
+                                <td>{$vo['form']}{$vo['tips']}</td>
+                            </tr>
+                            {/volist}
+                           
+                           <tr>
+                                <td colspan="2">
+                                    <input class="btn btn-primary  mr10"  value="保存后自动关闭" name="dosubmit"  type="submit">
+                                    <input class="btn btn-primary  mr10"  value="保存并继续发表" name="dosubmit_continue" type="submit">
+                                    <input class="btn" onclick="history.go(-1)" value="返回" type="button">
+                                </td>
+                            </tr>
+                        </tbody></table>
+                   
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <!--/main-->
+</div>
+</body>
+</html>

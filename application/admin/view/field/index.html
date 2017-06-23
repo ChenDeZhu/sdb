@@ -1,0 +1,49 @@
+{include file="public:header" /}
+<div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i><a href="{:url('Index/index')}">首页</a><span class="crumb-step">&gt;</span>字段管理</span></div>
+        </div>
+       
+        <div class="result-wrap">
+            <form name="myform" id="myform" method="post">
+                <div class="result-title">
+                    <div class="result-list">
+                        <a href="{:url('Field/add')}"><i class="icon-font"></i>添加字段</a>
+                        <a onclick="myform.action='{:url('Field/listorder')}';myform.submit();" href="javascript:void(0)"><i class="icon-font"></i>更新排序</a>
+                    </div>
+                  
+                </div>
+                <div class="result-content">
+                    <table class="result-tab" width="100%">
+                       <tr>
+                        <th width="70">排序</th>
+                        <th width="90">字段名</th>
+                        <th width="100">别名</th>
+                        <th width="100">类型</th>
+                        <th>管理操作</th>
+                                  
+                       </tr>
+                       {foreach name="list" id='vo' }
+                       <tr align="center">
+                       <td><input type="text" style="width:50px;" name="listorder[{$vo.id}]" value="{$vo.listorder}" /></td>
+                        <td>{$vo.field}</td>
+                        <td>{$vo.name}</td>
+                        <td>{$vo.formtype}</td>
+                        <td><a href="{:url('Field/edit',array('id'=>$vo['id']))}">修改</a><?php if(!in_array($vo['field'],$forbid_fields)) { ?>
+                        <a href="{:url('Field/disabled',['disabled'=>$vo['disabled'],'id'=>$vo['id']])}">{$vo['disabled'] ? '启用' : '禁用'}</a>
+                        <?php } else { ?><font color="#BEBEBE"> 禁用 </font><?php } ?>|<?php if(!in_array($vo['field'],$forbid_delete)) {?>
+                        <a onClick="confirm_delete()" href="{:url('Field/delete',['id'=>$vo['id']])}">删除</a><?php } else {?><font color="#BEBEBE"> 删除</font><?php }?></td>
+                       </tr>
+                      {/foreach}
+                      
+                    </table>
+                   
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--/main-->
+</div>
+</body>
+</html>

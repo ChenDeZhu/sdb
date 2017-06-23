@@ -1,0 +1,711 @@
+---------------------------------------------------------------
+[ 2017-06-23T08:38:07+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/common/cache.html
+[ info ] www.sdb.com/admin.php/common/cache.html [运行时间：0.055003s][吞吐率：18.18req/s] [内存消耗：2,067.13kb] [文件加载：40]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'common',
+    2 => 'cache',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2759.400 QQBrowser/9.6.11266.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/admin.php/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bb2_screener_=1498176402+60.189.221.83; PHPSESSID=0nl30g44o5merotvd15hn9fhu5; _ga=GA1.2.1210683529.1498176484; _gid=GA1.2.1844311317.1498176484; _hjIncludedInSample=1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Common->cache[ D:\wamp64\www\sdb\application\admin\controller\Common.php ]
+[ info ] [ VIEW ] D:\wamp64\www\sdb\public\message\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-06-23T08:38:08+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/index.html
+[ info ] www.sdb.com/admin.php/index/index.html [运行时间：0.060003s][吞吐率：16.67req/s] [内存消耗：2,399.35kb] [文件加载：44]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2759.400 QQBrowser/9.6.11266.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/admin.php/common/cache.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bb2_screener_=1498176402+60.189.221.83; PHPSESSID=0nl30g44o5merotvd15hn9fhu5; _ga=GA1.2.1210683529.1498176484; _gid=GA1.2.1844311317.1498176484; _hjIncludedInSample=1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\wamp64\www\sdb\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\sdb/application/admin\view\index\index.html [ array (
+  0 => 'server_info',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-06-23T08:38:08+08:00 ] 127.0.0.1 127.0.0.1 GET /public/webuploader/css/webuploader.css
+[ info ] www.sdb.com/public/webuploader/css/webuploader.css [运行时间：0.020001s][吞吐率：50.00req/s] [内存消耗：1,473.02kb] [文件加载：31]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'public',
+    2 => 'webuploader',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2759.400 QQBrowser/9.6.11266.400',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www.sdb.com/admin.php/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bb2_screener_=1498176402+60.189.221.83; PHPSESSID=0nl30g44o5merotvd15hn9fhu5; _ga=GA1.2.1210683529.1498176484; _gid=GA1.2.1844311317.1498176484; _hjIncludedInSample=1',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'webuploader.css',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-06-23T08:38:10+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/system/set.html
+[ info ] www.sdb.com/admin.php/system/set.html [运行时间：0.048003s][吞吐率：20.83req/s] [内存消耗：3,489.88kb] [文件加载：54]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'system',
+    2 => 'set',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2759.400 QQBrowser/9.6.11266.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/admin.php/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bb2_screener_=1498176402+60.189.221.83; PHPSESSID=0nl30g44o5merotvd15hn9fhu5; _ga=GA1.2.1210683529.1498176484; _gid=GA1.2.1844311317.1498176484; _hjIncludedInSample=1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\System->set[ D:\wamp64\www\sdb\application\admin\controller\System.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\sdb/application/admin\view\system\set.html [ array (
+  0 => 'detail',
+  1 => 'pc_template_list',
+  2 => 'wap_template_list',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-06-23T08:38:10+08:00 ] 127.0.0.1 127.0.0.1 GET /public/webuploader/css/webuploader.css
+[ info ] www.sdb.com/public/webuploader/css/webuploader.css [运行时间：0.025600s][吞吐率：39.06req/s] [内存消耗：1,473.02kb] [文件加载：31]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'public',
+    2 => 'webuploader',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2759.400 QQBrowser/9.6.11266.400',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www.sdb.com/admin.php/system/set.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bb2_screener_=1498176402+60.189.221.83; PHPSESSID=0nl30g44o5merotvd15hn9fhu5; _ga=GA1.2.1210683529.1498176484; _gid=GA1.2.1844311317.1498176484; _hjIncludedInSample=1',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'webuploader.css',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-06-23T08:38:16+08:00 ] 127.0.0.1 127.0.0.1 POST /admin.php/system/set.html
+[ info ] www.sdb.com/admin.php/system/set.html [运行时间：0.070004s][吞吐率：14.28req/s] [内存消耗：3,249.21kb] [文件加载：50]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'system',
+    2 => 'set',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'content-length' => '862',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.sdb.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2759.400 QQBrowser/9.6.11266.400',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryZpcGyBB9FNCtrCBB',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/admin.php/system/set.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bb2_screener_=1498176402+60.189.221.83; PHPSESSID=0nl30g44o5merotvd15hn9fhu5; _ga=GA1.2.1210683529.1498176484; _gid=GA1.2.1844311317.1498176484; _hjIncludedInSample=1',
+)
+[ info ] [ PARAM ] array (
+  'title' => '我的网站1',
+  'keywords' => '我的网站',
+  'description' => '我的网站',
+  'template_pc' => 'redblog',
+  'template_wap' => 'default',
+  'width' => '320',
+  'height' => '240',
+  'pwater' => '0',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\System->set[ D:\wamp64\www\sdb\application\admin\controller\System.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] D:\wamp64\www\sdb\public\message\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-06-23T08:38:17+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/system/set.html
+[ info ] www.sdb.com/admin.php/system/set.html [运行时间：0.082004s][吞吐率：12.19req/s] [内存消耗：3,279.24kb] [文件加载：51]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'system',
+    2 => 'set',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2759.400 QQBrowser/9.6.11266.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/admin.php/system/set.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bb2_screener_=1498176402+60.189.221.83; PHPSESSID=0nl30g44o5merotvd15hn9fhu5; _ga=GA1.2.1210683529.1498176484; _gid=GA1.2.1844311317.1498176484; _hjIncludedInSample=1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\System->set[ D:\wamp64\www\sdb\application\admin\controller\System.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\sdb/application/admin\view\system\set.html [ array (
+  0 => 'detail',
+  1 => 'pc_template_list',
+  2 => 'wap_template_list',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-06-23T08:38:17+08:00 ] 127.0.0.1 127.0.0.1 GET /public/webuploader/css/webuploader.css
+[ info ] www.sdb.com/public/webuploader/css/webuploader.css [运行时间：0.032002s][吞吐率：31.25req/s] [内存消耗：1,473.02kb] [文件加载：31]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'public',
+    2 => 'webuploader',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2759.400 QQBrowser/9.6.11266.400',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www.sdb.com/admin.php/system/set.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bb2_screener_=1498176402+60.189.221.83; PHPSESSID=0nl30g44o5merotvd15hn9fhu5; _ga=GA1.2.1210683529.1498176484; _gid=GA1.2.1844311317.1498176484; _hjIncludedInSample=1',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'webuploader.css',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-06-23T08:39:20+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/index.html
+[ info ] www.sdb.com/admin.php/index/index.html [运行时间：0.049002s][吞吐率：20.41req/s] [内存消耗：2,199.40kb] [文件加载：41]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2759.400 QQBrowser/9.6.11266.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/admin.php/system/set.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bb2_screener_=1498176402+60.189.221.83; PHPSESSID=0nl30g44o5merotvd15hn9fhu5; _ga=GA1.2.1210683529.1498176484; _gid=GA1.2.1844311317.1498176484; _hjIncludedInSample=1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\wamp64\www\sdb\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\sdb/application/admin\view\index\index.html [ array (
+  0 => 'server_info',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-06-23T08:39:20+08:00 ] 127.0.0.1 127.0.0.1 GET /public/webuploader/css/webuploader.css
+[ info ] www.sdb.com/public/webuploader/css/webuploader.css [运行时间：0.032002s][吞吐率：31.25req/s] [内存消耗：1,473.02kb] [文件加载：31]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'public',
+    2 => 'webuploader',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2759.400 QQBrowser/9.6.11266.400',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www.sdb.com/admin.php/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bb2_screener_=1498176402+60.189.221.83; PHPSESSID=0nl30g44o5merotvd15hn9fhu5; _ga=GA1.2.1210683529.1498176484; _gid=GA1.2.1844311317.1498176484; _hjIncludedInSample=1',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'webuploader.css',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-06-23T08:40:49+08:00 ] 127.0.0.1 127.0.0.1 GET /public/webuploader/css/webuploader.css
+[ info ] www.sdb.com/public/webuploader/css/webuploader.css [运行时间：0.021001s][吞吐率：47.62req/s] [内存消耗：1,473.02kb] [文件加载：31]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'public',
+    2 => 'webuploader',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2759.400 QQBrowser/9.6.11266.400',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www.sdb.com/admin.php/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bb2_screener_=1498176402+60.189.221.83; PHPSESSID=0nl30g44o5merotvd15hn9fhu5; _ga=GA1.2.1210683529.1498176484; _gid=GA1.2.1844311317.1498176484; _hjIncludedInSample=1',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'webuploader.css',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-06-23T08:40:53+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/index/index.html
+[ info ] www.sdb.com/admin.php/index/index.html [运行时间：0.047003s][吞吐率：21.28req/s] [内存消耗：2,399.55kb] [文件加载：44]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2759.400 QQBrowser/9.6.11266.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/admin.php/system/set.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bb2_screener_=1498176402+60.189.221.83; PHPSESSID=0nl30g44o5merotvd15hn9fhu5; _ga=GA1.2.1210683529.1498176484; _gid=GA1.2.1844311317.1498176484; _hjIncludedInSample=1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\wamp64\www\sdb\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\sdb/application/admin\view\index\index.html [ array (
+  0 => 'server_info',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-06-23T08:40:53+08:00 ] 127.0.0.1 127.0.0.1 GET /public/webuploader/css/webuploader.css
+[ info ] www.sdb.com/public/webuploader/css/webuploader.css [运行时间：0.026001s][吞吐率：38.46req/s] [内存消耗：1,473.41kb] [文件加载：31]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'public',
+    2 => 'webuploader',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2759.400 QQBrowser/9.6.11266.400',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www.sdb.com/admin.php/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bb2_screener_=1498176402+60.189.221.83; PHPSESSID=0nl30g44o5merotvd15hn9fhu5; _ga=GA1.2.1210683529.1498176484; _gid=GA1.2.1844311317.1498176484; _hjIncludedInSample=1',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'webuploader.css',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-06-23T08:41:03+08:00 ] 127.0.0.1 127.0.0.1 GET /public/webuploader/css/webuploader.css
+[ info ] www.sdb.com/public/webuploader/css/webuploader.css [运行时间：0.019001s][吞吐率：52.63req/s] [内存消耗：1,473.06kb] [文件加载：31]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'public',
+    2 => 'webuploader',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2759.400 QQBrowser/9.6.11266.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bb2_screener_=1498176402+60.189.221.83; PHPSESSID=0nl30g44o5merotvd15hn9fhu5; _ga=GA1.2.1210683529.1498176484; _gid=GA1.2.1844311317.1498176484; _hjIncludedInSample=1',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'webuploader.css',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-06-23T08:42:01+08:00 ] 127.0.0.1 127.0.0.1 GET /public/webuploader/css/webuploader.css
+[ info ] www.sdb.com/public/webuploader/css/webuploader.css [运行时间：0.019002s][吞吐率：52.63req/s] [内存消耗：1,473.06kb] [文件加载：31]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'public',
+    2 => 'webuploader',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2759.400 QQBrowser/9.6.11266.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bb2_screener_=1498176402+60.189.221.83; PHPSESSID=0nl30g44o5merotvd15hn9fhu5; _ga=GA1.2.1210683529.1498176484; _gid=GA1.2.1844311317.1498176484; _hjIncludedInSample=1',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'webuploader.css',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-06-23T08:42:27+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/article/index.html
+[ info ] www.sdb.com/admin.php/article/index.html [运行时间：0.079005s][吞吐率：12.66req/s] [内存消耗：3,781.45kb] [文件加载：56]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2759.400 QQBrowser/9.6.11266.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/admin.php/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bb2_screener_=1498176402+60.189.221.83; PHPSESSID=0nl30g44o5merotvd15hn9fhu5; _ga=GA1.2.1210683529.1498176484; _gid=GA1.2.1844311317.1498176484; _hjIncludedInSample=1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Article->index[ D:\wamp64\www\sdb\application\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\sdb/application/admin\view\article\index.html [ array (
+  0 => 'q',
+  1 => 'catid',
+  2 => 'article_list',
+  3 => 'cate_list',
+  4 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-06-23T08:42:27+08:00 ] 127.0.0.1 127.0.0.1 GET /public/webuploader/css/webuploader.css
+[ info ] www.sdb.com/public/webuploader/css/webuploader.css [运行时间：0.016001s][吞吐率：62.50req/s] [内存消耗：1,473.02kb] [文件加载：31]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'public',
+    2 => 'webuploader',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2759.400 QQBrowser/9.6.11266.400',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www.sdb.com/admin.php/article/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bb2_screener_=1498176402+60.189.221.83; PHPSESSID=0nl30g44o5merotvd15hn9fhu5; _ga=GA1.2.1210683529.1498176484; _gid=GA1.2.1844311317.1498176484; _hjIncludedInSample=1',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'webuploader.css',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-06-23T08:42:47+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/article/index.html
+[ info ] www.sdb.com/admin.php/article/index.html [运行时间：0.076004s][吞吐率：13.16req/s] [内存消耗：3,781.66kb] [文件加载：56]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2759.400 QQBrowser/9.6.11266.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/admin.php/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bb2_screener_=1498176402+60.189.221.83; PHPSESSID=0nl30g44o5merotvd15hn9fhu5; _ga=GA1.2.1210683529.1498176484; _gid=GA1.2.1844311317.1498176484; _hjIncludedInSample=1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Article->index[ D:\wamp64\www\sdb\application\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\sdb/application/admin\view\article\index.html [ array (
+  0 => 'q',
+  1 => 'catid',
+  2 => 'article_list',
+  3 => 'cate_list',
+  4 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-06-23T08:42:51+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.php/article/index.html
+[ info ] www.sdb.com/admin.php/article/index.html [运行时间：0.061004s][吞吐率：16.39req/s] [内存消耗：3,575.15kb] [文件加载：53]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2759.400 QQBrowser/9.6.11266.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/admin.php/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'bb2_screener_=1498176402+60.189.221.83; PHPSESSID=0nl30g44o5merotvd15hn9fhu5; _ga=GA1.2.1210683529.1498176484; _gid=GA1.2.1844311317.1498176484; _hjIncludedInSample=1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Article->index[ D:\wamp64\www\sdb\application\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\sdb/application/admin\view\article\index.html [ array (
+  0 => 'q',
+  1 => 'catid',
+  2 => 'article_list',
+  3 => 'cate_list',
+  4 => 'page',
+) ]
+[ info ] [ LOG ] INIT File

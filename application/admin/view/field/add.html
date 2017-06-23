@@ -1,0 +1,74 @@
+{include file="public:header" /}
+<div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i><a href="{:url('Index/index')}">首页</a><span class="crumb-step">&gt;</span><span>添加字段</span></div>
+        </div>
+        <div class="result-wrap">
+            <div class="result-content">
+                <form action="{:url('Field/add')}" method="post" id="myform" name="myform" enctype="multipart/form-data">
+                    <table class="insert-tab" width="100%" border="1">
+                        <tbody>
+                       
+                          <tr>
+                    <th>字段类型<br /></th>
+                    <td>
+                     <select name="formtype" id = "formtype">
+                     <option value="0">选择类型</option>
+                     {foreach name="all_field" id='vo' }
+                     <option value="{$key}">{$vo}</option>
+                     {/foreach}
+                     </select>
+                     </td>
+                </tr>
+                 <tr>
+                    <th>主表字段</th>
+                    <td><input type="radio"  name="issystem" value="1" checked="checked" >是 <input type="radio"  name="issystem" value="0" >否</td>
+                </tr>
+                <tr>
+                    <th width="25%"><font color="red">*</font> 字段名</th>
+                    <td><input type="text" class="common-text"  name="field" id="field" size="30" ></td>
+                </tr>
+                <tr>
+                    <th><font color="red">*</font> 字段别名</th>
+                    <td><input type="text" class="common-text"  name="name" id="name" size="30" ></td>
+                </tr>
+                <tr>
+                    <th>字段提示</th>
+                    <td><textarea name="tips" id="tips" class="common-textarea" style="height:40px; width:80%"></textarea></td>
+                </tr>
+                <tr>
+                    <th>默认值</th>
+                    <td id="default_value"></td>
+                </tr>
+               
+                <tr>
+                <th></th>
+                <td>
+                    <input class="btn btn-primary  mr10"  value="提交" name="dosubmit" type="submit">
+                    <input class="btn" onclick="history.go(-1)" value="返回" type="button">
+                </td>
+            </tr>
+        </tbody></table>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <!--/main-->
+    <script>
+    
+	$("#formtype").change(function(){
+  		//alert(this.value);
+  		var url ="{:url('Field/default_value')}";
+  		$.get(url,{'formtype':this.value},function(data){
+  			$("#default_value").html(data);
+			$('#datetime').datetimepicker();
+  		});
+  	});
+    
+    </script>
+   
+</div>
+</body>
+</html>

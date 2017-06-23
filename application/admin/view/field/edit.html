@@ -1,0 +1,71 @@
+{include file="public:header" /}
+<div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i><a href="{:url('Index/index')}">首页</a><span class="crumb-step">&gt;</span><span>修改字段</span></div>
+        </div>
+        <div class="result-wrap">
+            <div class="result-content">
+                <form action="{:url('Field/edit')}" method="post" id="myform" name="myform" enctype="multipart/form-data" >
+                 <input name="id" type="hidden" value="{$id}">
+                 <input name="formtype" type="hidden" value="{$formtype}">
+                 <input name="oldfield" type="hidden" value="{$detail.field}">
+                    <table class="insert-tab" width="100%">
+                        <tbody>
+                           <tr>
+                    <th>字段类型<br /></th>
+                    <td>{$type}</td>
+                </tr>
+                 <tr>
+                    <th>主表字段</th>
+                    <td>
+                    <input type="hidden" name="issystem" value="{$detail.issystem}">
+                    {if condition="$detail['issystem'] eq 1"}是{else}否{/if}
+                    </td>
+                </tr>
+                <tr>
+                    <th width="25%"><font color="red">*</font> 字段名</th>
+                    <td><input type="text" name="field" id="field" class="common-text" {if condition="in_array($detail['field'],$forbid_edit)"}readonly="readonly"{/if} value="{$detail.field}" size="30" ></td>
+                </tr>
+                <tr>
+                    <th><font color="red">*</font> 字段别名</th>
+                    <td><input type="text" name="name" id="name" class="common-text" value="{$detail.name}" size="30" ></td>
+                </tr>
+                <tr>
+                    <th>字段提示</th>
+                    <td><textarea name="tips" class="common-textarea" id="tips" style="height:40px; width:80%">{$detail.tips}</textarea></td>
+                </tr>
+                <tr>
+                    <th>默认值</th>
+                    <td>
+                    {if condition="$formtype eq 'text'"}
+                    <input class="common-text" size="60" value="{$detail.defaultvalue}" name="defaultvalue" type="text">长度：<input class="common-text" size="10" name="length" value="{$detail.length}" type="text">范围：1~255
+                    {/if}
+                     {if condition="$formtype eq 'number'"}
+                    <input class="common-text" size="30" value="{$detail.defaultvalue}" name="defaultvalue" type="text">
+                    {/if}
+                     
+                     {if condition="$formtype eq 'textarea'"}
+                     <textarea name="defaultvalue"  class="common-textarea" style="height:40px; width:80%">{$detail.defaultvalue}</textarea>
+                     {/if}
+                    
+                    
+                    </td>
+                </tr>
+                            <tr>
+                                <th></th>
+                                <td>
+                                    <input class="btn btn-primary btn6 mr10"  value="提交" type="submit">
+                                    <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button">
+                                </td>
+                            </tr>
+                        </tbody></table>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <!--/main-->
+</div>
+</body>
+</html>
