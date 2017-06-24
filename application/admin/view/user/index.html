@@ -1,0 +1,61 @@
+{include file="public:header" /}
+<div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i><a href="{:url('Index/index')}">首页</a><span class="crumb-step">&gt;</span><span class="crumb-name">客服管理</span></div>
+        </div>
+        <div class="search-wrap">
+            <div class="search-content">
+                <form action="{:url('User/index')}" method="get">
+                    <table class="search-tab">
+                        <tr>
+                           
+                            <th width="70">昵称:</th>
+                            <td><input class="common-text" placeholder="关键字" name="q" value="{$q?$q:''}"  type="text"></td>
+                            <td><input class="btn btn-primary btn2" value="查询" type="submit"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <div class="result-wrap">
+            <form name="myform" id="myform" method="post">
+                
+                <div class="result-content">
+                    <table class="result-tab" width="100%">
+                        <tr>
+                           
+                            <th width="15">昵称</th>
+                            <th width="15">手机号</th>
+                            <th width="15">微信</th>
+                            <th width="15">手机验证</th>
+                            <th width="15">身份证验证</th>
+                            <th width="15">邮箱验证</th>
+                            <th width="10">操作</th>
+                        </tr>
+                        {volist name='list' id='vo'}
+                        <tr align="center">
+                            
+                            <td>{$vo.nickname}</td>
+                            <td>{$vo.mobile}</td>
+                            <td>{$vo.wechat}</td>
+                            <td>{$vo.mobile_status}</td>
+                            <td>{$vo.id_status}</td>
+                            <td>{$vo.email_status}</td>
+                            <td>
+                                <a class="link-update" href="{:url('User/user_detail',['id'=>$vo['uid']])}">查看用户详情</a>
+                                
+                            </td>
+                        </tr>
+                        {/volist}
+                        <tr><td colspan="9">{$page}</td></tr>
+                    </table>
+                   
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--/main-->
+</div>
+</body>
+</html>

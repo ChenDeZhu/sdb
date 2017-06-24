@@ -1,0 +1,53 @@
+{include file="public:header" /}
+<div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i><a href="{:url('Index/index')}">首页</a><span class="crumb-step">&gt;</span><a class="crumb-name" href="{:url('Recruitment/index')}">招聘管理</a><span class="crumb-step">&gt;</span><span>修改招聘</span></div>
+        </div>
+        <div class="result-wrap">
+            <div class="result-content">
+                <form action="{:url('Recruitment/edit')}" method="post" id="myform" name="myform" enctype="multipart/form-data">
+                   <input type="hidden" name="id" value="{$data.id}">
+                    <table class="insert-tab" width="100%" border="1">
+                        <tbody>
+                            <tr>
+                                <th>排序：</th>
+                                <td><input type="text" class="common-text" size="25" name="sort" id="sort"  value="{$data.sort}"  ></td>
+                            </tr>
+                            <tr>
+                                <th>浏览数：</th>
+                                <td><input type="text" class="common-text" size="25" name="click" id="click"  value="{$data.click}"  ></td>
+                            </tr>
+                            <tr>
+                                <th>职位：</th>
+                                <td><input name="position" id="position"   class="common-text"  size="50"  value="{$data.position}"  type="text" ></td>
+                            </tr>
+                                <th>薪资：</th>
+                                <td><input name="salary" id="salary"   class="common-text"  size="50"  value="{$data.salary}"  type="text" ></td>
+                            </tr>
+                            <tr>
+                                <th>要求：</th>
+                                <td><textarea name="equirement" class="common-textarea" id="equirement"  style="width:50%; height:100px" >{$data.equirement}</textarea></td>
+                            </tr>
+                                                       
+                            <tr>
+                                <th>内容：</th>
+                                <td><script type="text/plain" id="content"  style="width:70%;height:200px;">{$data.content}</script><script type="text/javascript">
+var um = UM.getEditor("content",{UEDITOR_HOME_URL: "/public/ueditor/",imageUrl: "/api.php/upload/ueditor",imagePath: "/",textarea: 'content'});</script></td>
+                            </tr>
+                            
+                                <td colspan="2">
+                                    <input class="btn btn-primary  mr10"  value="提交" name="dosubmit"  type="submit">
+                                  
+                                    <input class="btn" onclick="history.go(-1)" value="返回" type="button">
+                                </td>
+                            </tr>
+                        </tbody></table>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--/main-->
+</div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+{include file="public:header" /}
+<div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i><a href="{:url('Index/index')}">首页</a><span class="crumb-step">&gt;</span><span class="crumb-name">币种管理</span></div>
+        </div>
+        <div class="search-wrap">
+            <div class="search-content">
+                <form action="{:url('currency/index')}" method="get">
+                    <table class="search-tab">
+                        <tr>
+                            
+                            <th width="70">关键字:</th>
+                            <td><input class="common-text" placeholder="关键字" name="q" value="{$q?$q:''}"  type="text"></td>
+                            <td><input class="btn btn-primary btn2" value="查询" type="submit"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <div class="result-wrap">
+            <form name="myform" id="myform" method="post">
+                <div class="result-title">
+                    <div class="result-list">
+                        <a href="{:url('currency/add')}"><i class="icon-font"></i>添加币种</a>
+                    </div>
+                </div>
+                <div class="result-content">
+                    <table class="result-tab" width="100%">
+                        <tr>
+                            <th style="width: 10%">Logo</th>
+                            <th>币种名称</th>
+                            <th>市价</th>
+                            <th>利息</th>
+                            <th>涨幅</th>
+                            <th width="200">操作</th>
+                        </tr>
+                        {volist name='list' id='vo'}
+                        <tr align="center">
+                            <td><img src="{$vo['logo']}" style="width: 20%"></td>
+                            <td align="left"><a target="_blank" href="__ROOT__/index.php/currency/show.html?id={$vo.id}" title="{$vo.name}">{$vo['name']}</a>
+                            </td>
+                            <td>{$vo['price']}</td>
+                            <td>{$vo['interest']}</td>
+                            <td>{$vo['rise']}%</td>
+                            <td>
+                                <a class="link-update" href="{:url('currency/edit',['id'=>$vo['id']])}">修改</a>
+                                <a class="link-del" href="{:url('currency/delete',['id'=>$vo['id']])}">删除</a>
+                            </td>
+                        </tr>
+                        {/volist}
+                        <tr><td colspan="9">{$page}</td></tr>
+                    </table>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--/main-->
+</div>
+</body>
+</html>

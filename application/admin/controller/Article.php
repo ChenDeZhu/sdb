@@ -24,6 +24,7 @@ class Article extends Common
         }
         $article_list = Article2::where($map)->order('listorder desc,id desc')->paginate(10, false, ['query' => ['q' => $q, 'catid' => $catid]]);
         $page = $article_list->render();
+        
         $this->assign('q', $q);
         $this->assign('catid', $catid);
         $this->assign('article_list', $article_list);
@@ -45,6 +46,7 @@ class Article extends Common
         $content_form = new \org\Content_form();
         $forminfos = $content_form->get();
         $this->assign('forminfos', $forminfos);
+        // print_r($forminfos);exit;
         $catid = input('catid');
         $this->assign('list', model('category')->getList());
         $this->assign('catid', intval($catid));

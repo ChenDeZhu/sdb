@@ -1,0 +1,91 @@
+{include file="public:header" /}
+
+    <div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i><a href="{:url('Index/index')}">首页</a><span class="crumb-step">&gt;</span><span>用户详情</span></div>
+        </div>
+        <div class="result-wrap">
+            <div class="result-content">
+                <form action="{:url('Category/add')}" method="post"  id="form" enctype="multipart/form-data" >
+                    <ul class="admin_tab">
+                    <li><a class="active">用户资料</a></li>
+                    <li><a>用户拥有资金</a></li>
+                    </ul>
+                    <div class="admin_tab_cont" style="display:block;">
+                    
+                    <table class="insert-tab" width="100%">
+                        <tbody>
+                            <tr>
+                                <th width="100">用户昵称：</th>
+                                <td>
+                                {$data.nickname}
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>手机：</th>
+                                <td>{$data.mobile}</td>
+                            </tr>
+                            <tr>
+                                <th>微信：</th>
+                                <td>{$data.wechat}</td>
+                            </tr>
+                            <tr>
+                                <th>QQ：</th>
+                                <td>{$data.qq}</td>
+                            </tr>
+                            <tr>
+                                <th>email：</th>
+                                <td>{$data.email}</td>
+                            </tr>
+                            
+                            
+                           
+                            
+                        </tbody>
+                        
+                        </table>
+                    
+                    </div>
+                   
+                    
+                    <div class="admin_tab_cont">
+                        <div class="result-content">
+                    <table class="result-tab" width="100%">
+                        <tr>
+                           
+                            <th width="200">资金名称</th>
+                            <th width="200">可用资金</th>
+                            <!-- <th width="50">状态</th> -->
+                            <th width="200">挂单资金</th>
+                            <th width="200">确认中资金</th>
+                            <th width="200">总计</th>
+                        </tr>
+                        {volist name='list' id='vo'}
+                        <tr align="center">
+                            
+                            <td>{$vo.name}</td>
+                            <td>{$vo.use_num}</td>
+                            <td>{$vo.guadan_num}</td>
+                            <td>{$vo.con_num}</td>
+                            <td>{$vo['use_num']+$vo['guadan_num']+$vo['con_num']}</td>
+                           
+                        </tr>
+                        {/volist}
+                        
+                    </table>
+                   
+                </div>
+                    
+                    
+                    </div>
+                   
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <!--/main-->
+</div>
+</body>
+</html>

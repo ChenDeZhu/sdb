@@ -3,6 +3,7 @@ namespace app\admin\controller;
 
 use think\Controller;
 use think\Config;
+use think\Db;
 class Common extends Controller
 {
     public $prefix;

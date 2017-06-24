@@ -1,0 +1,66 @@
+{include file="public:header" /}
+<div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i><a href="{:url('Index/index')}">首页</a><span class="crumb-step">&gt;</span><a class="crumb-name" href="{:url('Infomation/index')}">资讯管理</a><span class="crumb-step">&gt;</span><span>添加资讯</span></div>
+        </div>
+        <div class="result-wrap">
+            <div class="result-content">
+                <form action="{:url('Infomation/edit')}" method="post" id="myform" name="myform" enctype="multipart/form-data">
+                   <input type="hidden" name="id" value="{$data.id}">
+                    <table class="insert-tab" width="100%" border="1">
+                        <tbody>
+                        <tr>
+                                <th width="80">栏目：</th>
+                                <td>
+                                    <select name="type">
+                                    <option >选择栏目</option>
+                                    <option value="0" {if condition="$data['type'] eq 0"}selected="selected"{/if}>论坛</option>
+                                    <option value="1" {if condition="$data['type'] eq 1"}selected="selected"{/if}>新闻</option>
+                                    <option value="2" {if condition="$data['type'] eq 2"}selected="selected"{/if}>常见问题</option>
+                                    
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>标题：</th>
+                                <td><input name="title" id="title"   class="common-text"  size="50"  value="{$data['title']}"  type="text" ></td>
+                                                        
+                            <tr>
+                            
+                            <tr>
+                                <th>图片：</th>
+                                <td>{:form_image('img',$data['img'])}</td>
+                            </tr>
+                            <tr>
+                                <th>关键词：</th>
+                                <td><input name="keyword" id="keyword"   class="common-text"  size="50"  value="{$data['keyword']}"  type="text" ></td>
+                            </tr>
+                            <tr>
+                                <th>描述：</th>
+                                <td><input name="description" id="description"   class="common-text"  size="50"  value="{$data['description']}"  type="text" ></td>
+                            </tr>
+                            
+                                <th>内容：</th>
+                                <td><script type="text/plain" id="content"  style="width:70%;height:200px;">{$data['content']}</script><script type="text/javascript">
+var um = UM.getEditor("content",{UEDITOR_HOME_URL: "/public/ueditor/",imageUrl: "/api.php/upload/ueditor",imagePath: "/",textarea: 'content' });</script></td>
+                            </tr>
+                           <tr>
+                                <th>排序：</th>
+                                <td><input name="name" id="name"   class="common-text"  size="10"  value="{$data['type']}"  type="text" ></td>
+                            </tr>
+                                <td colspan="2">
+                                    <input class="btn btn-primary  mr10"  value="提交" name="dosubmit"  type="submit">
+                                    
+                                    <input class="btn" onclick="history.go(-1)" value="返回" type="button">
+                                </td>
+                            </tr>
+                        </tbody></table>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--/main-->
+</div>
+</body>
+</html>

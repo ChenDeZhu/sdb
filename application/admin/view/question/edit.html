@@ -1,0 +1,49 @@
+{include file="public:header" /}
+<div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i><a href="{:url('Index/index')}">首页</a><span class="crumb-step">&gt;</span><a class="crumb-name" href="{:url('Question/index')}">币种管理</a><span class="crumb-step">&gt;</span><span>添加币种</span></div>
+        </div>
+        <div class="result-wrap">
+            <div class="result-content">
+                <form action="{:url('Question/edit')}" method="post" id="myform" name="myform" enctype="multipart/form-data">
+                   <input type="hidden" name="id" value="{$data.id}">
+                    <table class="insert-tab" width="100%" border="1">
+                        <tbody>
+                           
+                            <tr>
+                                <th>标题：</th>
+                                <td><input name="title" id="title"   class="common-text"  size="50"  value="{$data.title}"  type="text" readonly="readonly"></td>
+                            </tr>
+                                <th>问题描述：</th>
+                                <!-- <td><input name="description" id="description"   class="common-text"  size="50"  value="{$data.description}"  type="text" ></td> -->
+                                <td><textarea name="description" class="common-textarea" readonly="readonly" style="width:70%; height:100px;">{$data.description}</textarea></td>
+                            </tr>
+                            <tr>
+                                <th>问题截图：</th>
+                                <td>
+                                <div id="logo-queue" class="uploadify-queue"></div>
+                                <img src="/uploads/20170624/a04686f1b07fa757eab84331b62752ff.jpg" style="max-width:20%; max-height:80%">
+                                <img src="/uploads/20170624/a04686f1b07fa757eab84331b62752ff.jpg" style="max-width:20%; max-height:80%">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>客服回复：</th>
+                                <td><script type="text/plain" id="content"  style="width:70%;height:200px;">{$data.content}</script><script type="text/javascript">
+var um = UM.getEditor("content",{UEDITOR_HOME_URL: "/public/ueditor/",imageUrl: "/api.php/upload/ueditor",imagePath: "/",textarea: 'content'});</script></td>
+                            </tr>
+                           
+                                <td colspan="2">
+                                    <input class="btn btn-primary btn6 mr10"  value="提交" type="submit">
+                                    <input class="btn" onclick="history.go(-1)" value="返回" type="button">
+                                </td>
+                            </tr>
+                        </tbody></table>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--/main-->
+</div>
+</body>
+</html>
