@@ -4,8 +4,8 @@ namespace app\admin\controller;
 use think\Controller;
 class Page extends Common{
     public function index()
-    {
-        $list = db('page')->where($map)->order('id asc')->select();
+    {   
+        $list = db('page')->field('id,name')->order('id asc')->select();
         $this->assign('list', $list);
         return $this->fetch();
     }

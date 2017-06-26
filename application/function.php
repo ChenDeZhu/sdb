@@ -71,3 +71,12 @@ function get_catname($catid)
 {
     return db('category')->where('catid', $catid)->value('catname');
 }
+
+/**
+ * [getPerDay 获取前一天的时间]
+ * @param  [int] $time [当前时间]
+ * @return [int]       [24小时前的时间戳]
+ */
+function getPerDay($time){
+    return $time-86400000;
+}

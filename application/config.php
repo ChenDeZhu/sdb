@@ -120,7 +120,7 @@ return [
         // 标签库标签结束标记
         'taglib_end'   => '}',
 		//'taglib_load'       => true,
-		'taglib_build_in'   => 'cx,app\common\taglib\My',
+		// 'taglib_build_in'   => 'cx,app\common\taglib\My',
     ],
 
     // 视图输出字符串内容替换

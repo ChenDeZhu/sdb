@@ -1,0 +1,27 @@
+{include file="./public/header" /}
+	<div>
+	{volist name="data" id="v"}
+			<div class="box">
+				<div>货币名称：{$v.name}</div>
+				<div>最新成交价：{$v.recently}</div>
+				<div>今日最高：{$v.max}</div>
+				<div>今日最低：{$v.min}</div>
+				<div>今日涨跌幅：</div>
+				<div>24小时成交量：{$v.count}</div>
+			</div>
+	{/volist}
+	</div>
+	
+	<script type="text/javascript"> 
+        // 假设服务端ip为127.0.0.1  
+            var ws = new WebSocket('ws://127.0.0.1:2346');
+            ws.onopen = function(){
+                var uid = 'uid1';
+                ws.send(uid);
+                console.log(uid);
+            };
+            ws.onmessage = function(e){
+                console.log(111);
+            };
+            </script>
+{include file="./public/footer" /}

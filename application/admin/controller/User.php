@@ -18,11 +18,11 @@ class User extends Common{
         $list = db('user')->where($map)->order('reg_time desc')->paginate(10, false, ['query' => ['q' => $q]]);
         $page = $list->render();
         unset($list[0]);
-        // print_r($list);exit;
         $this->assign('q', $q);
         $this->assign('list', $list);
         $this->assign('page', $page);
         return $this->fetch();
+
     }
     
  	public function user_detail(){
@@ -30,7 +30,6 @@ class User extends Common{
  		$map['a.uid'] = $uid;
  		$list = db('u-b')->alias('a')->where($map)->join('__CURRENCY__ b','b.id = a.bid')->field('a.use_num,a.guadan_num,a.con_num,b.name')->select();
  		$data = db('user')->find($uid);
-
  		$this->assign('data',$data);
  		$this->assign('list', $list);
  		return $this->fetch();
