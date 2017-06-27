@@ -14,11 +14,11 @@
 	
 	<script type="text/javascript"> 
         // 假设服务端ip为127.0.0.1  
-            var ws = new WebSocket('ws://127.0.0.1:2346');
+            var ws = new WebSocket('ws://127.0.0.1:2347');
             ws.onopen = function(){
                 var uid = 'uid1';
-                ws.send(uid);
-                console.log(uid);
+                // ws.send(uid);
+                // console.log(uid);
             };
             ws.onmessage = function(e){
                 console.log(111);

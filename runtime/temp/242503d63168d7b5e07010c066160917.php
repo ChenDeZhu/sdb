@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:57:"D:\wamp64\www\sdb/application/index\view\index\index.html";i:1498465622;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\header.html";i:1498457170;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\footer.html";i:1498450778;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:57:"D:\wamp64\www\sdb/application/index\view\index\index.html";i:1498550825;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\header.html";i:1498457170;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\footer.html";i:1498450778;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,11 +46,11 @@
 	
 	<script type="text/javascript"> 
         // 假设服务端ip为127.0.0.1  
-            var ws = new WebSocket('ws://127.0.0.1:2346');
+            var ws = new WebSocket('ws://127.0.0.1:2347');
             ws.onopen = function(){
                 var uid = 'uid1';
-                ws.send(uid);
-                console.log(uid);
+                // ws.send(uid);
+                // console.log(uid);
             };
             ws.onmessage = function(e){
                 console.log(111);

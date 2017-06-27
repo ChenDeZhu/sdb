@@ -1,37 +1,53 @@
 <?php
 namespace app\socket\controller;  
 use Workerman\Worker;
+require_once __DIR__ .'/../../../vendor/workerman/workerman/Autoloader.php';
 
 class Index{
+    static $global_uid = 0;
 	public function index(){
-		 //连接服务器
+    global $text_worker;
+		// 创建一个文本协议的Worker监听2347接口
+    $text_worker = new Worker("websocket://127.0.0.1:2347");
+    // 只启动1个进程，这样方便客户端之间传输数据
+    $text_worker->count = 1;
+    $text_worker->onConnect = function($connection){
+        global $global_uid;
+        // 为这个链接分配一个uid
         
-        // 创建一个Worker监听2346端口，使用websocket协议通讯  
-        $ws_worker = new Worker("websocket://127.0.0.1:2346");  
-        $ws_worker->onWorkerStart = function($worker){
-            $inner_text_worker = new Worker('text://127.0.0.1:5678');
-             $inner_text_worker->onMessage = function($connection, $buffer)
-            {
-                // $data数组格式，里面有uid，表示向那个uid的页面推送数据
-                $data = json_decode($buffer, true);
-                $uid = $data['uid'];
-                // 通过workerman，向uid的页面推送数据
-                $ret = $this->sendMessageByUid($uid, $buffer);
-                // 返回推送结果
-                $connection->send($ret ? 'ok' : 'fail');
-            };
-        };
-        // 启动4个进程对外提供服务  
-        $ws_worker->listen();
-        $ws_worker->count = 4;  
-        // 当收到客户端发来的数据后返回hello $data给客户端  
-        $ws_worker->onMessage = function($connection, $data)
+        $connection->uid = ++$global_uid; 
+    };
+    $text_worker->onMessage = function($connection, $buffer){
+        // dump($buffer);
+        $data = json_decode($buffer,true);
+        var_dump($data);
+        global $text_worker;
+        $data1 = [
+        'bid'=>1,
+        'type'=>0,
+        'status'=>1,
+        'price'=>$data['price'],
+        'number'=>$data['number'],
+        'uid'=>1,
+        'addtime'=>time(),
+        ];
+        db('deal')->insert($data1);
+        $data
+        foreach($text_worker->connections as $conn)
         {   
-             
-            $connection->send('hello ' . $data);  
-        };  
-        // 运行worker  
-        Worker::runAll();
-      
+            $conn->send($data);
+        }
+
+    };
+    $text_worker->onClose = function($connection){
+        global $text_worker;
+        foreach($text_worker->connections as $conn)
+        {
+            $conn->send("user[{$connection->uid}] logout");
+        }
+        // $connection->send('hello');  
+    };
+    Worker::runAll();
 	}
+   
 }

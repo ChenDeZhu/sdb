@@ -7572,3 +7572,39 @@
 )
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-06-26T17:02:52+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index.html
+[ info ] www.sdb.com/index/index.html [运行时间：0.098006s][吞吐率：10.20req/s] [内存消耗：3,750.55kb] [文件加载：57]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2759.400 QQBrowser/9.6.11266.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/account/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.2.1210683529.1498176484; PHPSESSID=om6u6k5jr0vpk1d4li0a82vi60',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\sdb\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\sdb/application/index\view\index\index.html [ array (
+  0 => 'cinfo',
+  1 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
