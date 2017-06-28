@@ -1,7 +1,7 @@
 <?php
 namespace app\index\controller;
 use think\Controller;
-
+use think\Session;
 class Common extends Controller{
 	
 
@@ -12,6 +12,7 @@ class Common extends Controller{
 	public function _initialize(){
 		$cinfo = db('system')->find(1);
 		$this->assign('cinfo',$cinfo);
+		Session::set('uid',1);
 	}
 	/**
 	 * [验证登陆]

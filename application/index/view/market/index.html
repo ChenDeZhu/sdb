@@ -26,14 +26,17 @@
             ws.onopen = function(){
 			   console.log("连接成功");
             };
+            var data1 = '';
             ws.onmessage = function(e){
-                console.log(e.data);
+            	data1 = JSON.parse(e.data);
+                console.log(data1);
             };
             document.getElementById('buy').addEventListener('click',function(){
 
             	data = {}
             	data['price'] = document.getElementById('price').value;
             	data['number'] = document.getElementById('number').value;
+            	data['type'] = 0;
             	// console.log(data);
             	data = JSON.stringify(data);
 	            ws.send(data); 

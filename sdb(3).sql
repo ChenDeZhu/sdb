@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 2017-06-26 08:48:07
+-- Generation Time: 2017-06-28 08:58:10
 -- 服务器版本： 5.7.14
 -- PHP Version: 7.0.10
 
@@ -42,7 +42,7 @@ CREATE TABLE `s_admin` (
 --
 
 INSERT INTO `s_admin` (`id`, `username`, `password`, `nickname`, `email`, `lasttime`, `lastip`, `encrypt`) VALUES
-(1, 'admin', '0f8bf7cdd661d15d6d8a50daf24172d7', 'admin', '420021436@qq.com', 1498437739, '127.0.0.1', '6QsCIe');
+(1, 'admin', '0f8bf7cdd661d15d6d8a50daf24172d7', 'admin', '420021436@qq.com', 1498550076, '127.0.0.1', '6QsCIe');
 
 -- --------------------------------------------------------
 
@@ -180,21 +180,25 @@ INSERT INTO `s_currency` (`id`, `logo`, `name`, `price`, `interest`, `addtime`, 
 CREATE TABLE `s_deal` (
   `id` int(11) NOT NULL,
   `bid` int(11) NOT NULL DEFAULT '0' COMMENT '货币ID',
-  `uid` int(11) DEFAULT NULL COMMENT '用户ID',
+  `uid` int(11) NOT NULL COMMENT '用户ID',
   `type` tinyint(1) NOT NULL DEFAULT '0' COMMENT '0：买） （1：卖',
-  `price` double DEFAULT NULL,
-  `number` int(11) DEFAULT NULL,
-  `addtime` int(11) DEFAULT NULL,
-  `status` tinyint(1) NOT NULL DEFAULT '0' COMMENT '0失败 1 成功'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+  `price` float NOT NULL COMMENT '委托价格',
+  `status` tinyint(1) NOT NULL DEFAULT '0' COMMENT '0未全部交易完成 1交易完成',
+  `number` float NOT NULL DEFAULT '0' COMMENT '交易数量',
+  `number_no` float NOT NULL DEFAULT '0' COMMENT '交易未完成数量',
+  `addtime` int(11) NOT NULL COMMENT '单据创建时间'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- 转存表中的数据 `s_deal`
 --
 
-INSERT INTO `s_deal` (`id`, `bid`, `uid`, `type`, `price`, `number`, `addtime`, `status`) VALUES
-(1, 1, 1, 1, 2.02, 500, 1498437744, 1),
-(2, 1, 2, 0, 3, 500, 1498437755, 1);
+INSERT INTO `s_deal` (`id`, `bid`, `uid`, `type`, `price`, `status`, `number`, `number_no`, `addtime`) VALUES
+(1, 1, 1, 1, 2.02, 1, 500, 0, 1498437744),
+(2, 1, 2, 0, 3, 1, 500, 0, 1498437755),
+(4, 1, 1, 0, 201, 1, 1, 0, 1498550764),
+(34, 1, 1, 0, 2000, 1, 1, 0, 1498618605),
+(35, 1, 1, 0, 0, 1, 0, 200, 1498639585);
 
 -- --------------------------------------------------------
 
@@ -500,22 +504,20 @@ INSERT INTO `s_tag_data` (`id`, `tagid`, `contentid`) VALUES
 
 CREATE TABLE `s_u-b` (
   `id` int(11) NOT NULL,
-  `uid` int(11) DEFAULT NULL,
-  `bid` int(11) DEFAULT NULL,
-  `use_num` float(11,0) NOT NULL DEFAULT '0' COMMENT '可用资金',
-  `guadan_num` float(11,0) NOT NULL DEFAULT '0' COMMENT '挂单资金',
-  `con_num` float(11,0) NOT NULL DEFAULT '0' COMMENT '确认中资金'
+  `uid` int(11) NOT NULL,
+  `bid` int(11) NOT NULL,
+  `number` float NOT NULL COMMENT '数量'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- 转存表中的数据 `s_u-b`
 --
 
-INSERT INTO `s_u-b` (`id`, `uid`, `bid`, `use_num`, `guadan_num`, `con_num`) VALUES
-(1, 1, 1, 1000, 0, 0),
-(2, 1, 2, 5000, 0, 0),
-(3, 1, 3, 6000, 0, 0),
-(4, 1, 4, 7000, 0, 0);
+INSERT INTO `s_u-b` (`id`, `uid`, `bid`, `number`) VALUES
+(1, 1, 1, 0),
+(2, 1, 2, 0),
+(3, 1, 3, 0),
+(4, 1, 4, 0);
 
 -- --------------------------------------------------------
 
@@ -733,7 +735,7 @@ ALTER TABLE `s_currency`
 -- 使用表AUTO_INCREMENT `s_deal`
 --
 ALTER TABLE `s_deal`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 --
 -- 使用表AUTO_INCREMENT `s_field`
 --

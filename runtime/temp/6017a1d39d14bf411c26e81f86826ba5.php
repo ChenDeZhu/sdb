@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:58:"D:\wamp64\www\sdb/application/index\view\market\index.html";i:1498553513;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\header.html";i:1498457170;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\footer.html";i:1498450778;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:58:"D:\wamp64\www\sdb/application/index\view\market\index.html";i:1498639505;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\header.html";i:1498457170;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\footer.html";i:1498450778;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -58,14 +58,17 @@
             ws.onopen = function(){
 			   console.log("连接成功");
             };
+            var data1 = '';
             ws.onmessage = function(e){
-                console.log(e.data);
+            	data1 = JSON.parse(e.data);
+                console.log(data1);
             };
             document.getElementById('buy').addEventListener('click',function(){
 
             	data = {}
             	data['price'] = document.getElementById('price').value;
             	data['number'] = document.getElementById('number').value;
+            	data['type'] = 0;
             	// console.log(data);
             	data = JSON.stringify(data);
 	            ws.send(data); 
