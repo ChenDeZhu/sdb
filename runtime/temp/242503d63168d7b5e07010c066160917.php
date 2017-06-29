@@ -1,9 +1,11 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:57:"D:\wamp64\www\sdb/application/index\view\index\index.html";i:1498608904;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\header.html";i:1498457170;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\footer.html";i:1498450778;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:57:"D:\wamp64\www\sdb/application/index\view\index\index.html";i:1498609114;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\header.html";i:1498697763;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\footer.html";i:1498450778;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>首页</title>
+
+	<script type="text/javascript" src="__PUBLIC__/home/jquery-3.2.1.min.js"></script>
 </head>
 <style type="text/css">
 	.box{
@@ -53,8 +55,8 @@
                 // console.log(uid);
             };
             ws.onmessage = function(e){
-            	data = eval('(' + e.data + ')');
-                console.log(data);
+            	
+                console.log('11');
             };
             </script>
 </body>
