@@ -1,9 +1,11 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:56:"D:\wamp64\www\sdb/application/index\view\user\index.html";i:1498456567;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\header.html";i:1498457170;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\footer.html";i:1498450778;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:56:"D:\wamp64\www\sdb/application/index\view\user\index.html";i:1498456567;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\header.html";i:1498697763;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\footer.html";i:1498450778;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>首页</title>
+
+	<script type="text/javascript" src="__PUBLIC__/home/jquery-3.2.1.min.js"></script>
 </head>
 <style type="text/css">
 	.box{

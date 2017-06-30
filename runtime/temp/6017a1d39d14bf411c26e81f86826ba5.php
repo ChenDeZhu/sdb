@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:58:"D:\wamp64\www\sdb/application/index\view\market\index.html";i:1498721961;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\header.html";i:1498697763;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\footer.html";i:1498450778;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:58:"D:\wamp64\www\sdb/application/index\view\market\index.html";i:1498809752;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\header.html";i:1498697763;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\footer.html";i:1498450778;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -64,6 +64,11 @@
 <hr>
 <div class="weituo">
 	委托信息
+	<p>可用资产：<span id="money"><?php echo $money; ?></span>￥</p>
+	<p>可用币种数量：<span id="currency"><?php echo $currency; ?></span></p>
+
+	<p>冻结资产：<span id="dmoney"><?php echo $dmoney; ?></span>￥</p>
+	<p>冻结币种数量：<span id="dcurrency"><?php echo $dcurrency; ?></span></p>
 	<div>
 		<table class="box">
 			<thead>
@@ -96,7 +101,7 @@
 			</thead>
 			<tbody class="sale">
 				<?php if(is_array($list2) || $list2 instanceof \think\Collection || $list2 instanceof \think\Paginator): $i = 0; $__LIST__ = $list2;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?>
-				<tr >
+				<tr>
 					<td><?php echo $v['price']; ?></td>
 					<td><?php echo $v['number']; ?></td>
 					<td id="<?php echo $v['id']; ?>"><?php echo $v['number_no']; ?></td>
@@ -116,22 +121,11 @@
             var data1 = '';
             ws.onmessage = function(e){
             	data1 = JSON.parse(e.data);
-                
-                // //添加挂单
-                // if(data1['status'] ==1){
-                
-                	
-                // }else if(data1['status']==2){
-                // 	//更新卖单
-           		
-
-                // }
-
                 switch(data1['type']){
                 	case 0:
                 		//添加买入委托信息
                 		html = '';
-		                html+='<tr id="'+data1['id']+'"><td>'+data1["price"]+'</td><td>'+data1["number"]+'</td><td>'+data1["number_no"]+'</td></tr>'
+		                html+='<tr><td>'+data1["price"]+'</td><td>'+data1["number"]+'</td><td id="'+data1['id']+'">'+data1["number_no"]+'</td></tr>'
 		                $('.buy').prepend(html);
                 		break;
                 	case 1:
@@ -144,15 +138,43 @@
                 		//修改委托信息
                 		$("#"+data1['id']).html(data1['number_no']);
                 		break;
-                	
+
+
+                		//可以将35\46封装在一个方法里,代码
+                	case 3:
+                		//可用资产修改
+                		var money = $('#money').html();
+                		money = money-data1['rmoney'];
+                		$('#money').html(money);
+                		break;
+                	case 4:
+                		//冻结资产修改
+                		var money = $('#money').html();
+                		money = money-data1['rmoney'];
+                		var dmoney = $('#dmoney').html();
+                		dmoney = dmoney-0+data1['rmoney'];
+                		$('#money').html(money);
+                		$('#dmoney').html(dmoney);
+                		break;    	
+                	case 5:
+                		//可用货币修改
+                		var currency = $('#currency').html();
+                		currency = currency-data1['rcurrency'];
+                		$('#currency').html(currency); 
+                	case 6:
+                		//冻结货币修改
+                		console.log(data1);
+                		var currency = $('#currency').html();
+                		currency = currency-data1['rcurrency'];
+                		var dcurrency = $('#dcurrency').html();
+                		dcurrency = Number(dcurrency)+Number(data1['rcurrency']);
+                		$('#currency').html(currency);
+                		$('#dcurrency').html(dcurrency);
                 	default:
                 		break;
                 }
-
-
             };
             document.getElementById('buy').addEventListener('click',function(){
-
             	data = {}
             	data['price'] = document.getElementById('price').value;
             	data['number_no'] = document.getElementById('number').value;
@@ -171,7 +193,6 @@
             	data = JSON.stringify(data);
 	            ws.send(data); 
 	        })
-
             $('#sale').click(function(event) {
             	data = {};
             	data['bid'] = 1;
@@ -190,8 +211,6 @@
             	data = JSON.stringify(data);
 	            ws.send(data);
             });
-
-
     </script>
     
 </body>

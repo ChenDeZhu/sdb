@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 2017-06-28 08:58:10
+-- Generation Time: 2017-06-30 03:58:14
 -- 服务器版本： 5.7.14
 -- PHP Version: 7.0.10
 
@@ -42,7 +42,7 @@ CREATE TABLE `s_admin` (
 --
 
 INSERT INTO `s_admin` (`id`, `username`, `password`, `nickname`, `email`, `lasttime`, `lastip`, `encrypt`) VALUES
-(1, 'admin', '0f8bf7cdd661d15d6d8a50daf24172d7', 'admin', '420021436@qq.com', 1498550076, '127.0.0.1', '6QsCIe');
+(1, 'admin', '0f8bf7cdd661d15d6d8a50daf24172d7', 'admin', '420021436@qq.com', 1498719627, '127.0.0.1', '6QsCIe');
 
 -- --------------------------------------------------------
 
@@ -182,10 +182,10 @@ CREATE TABLE `s_deal` (
   `bid` int(11) NOT NULL DEFAULT '0' COMMENT '货币ID',
   `uid` int(11) NOT NULL COMMENT '用户ID',
   `type` tinyint(1) NOT NULL DEFAULT '0' COMMENT '0：买） （1：卖',
-  `price` float NOT NULL COMMENT '委托价格',
+  `price` varchar(255) NOT NULL COMMENT '委托价格',
   `status` tinyint(1) NOT NULL DEFAULT '0' COMMENT '0未全部交易完成 1交易完成',
-  `number` float NOT NULL DEFAULT '0' COMMENT '交易数量',
-  `number_no` float NOT NULL DEFAULT '0' COMMENT '交易未完成数量',
+  `number` float(12,2) UNSIGNED NOT NULL DEFAULT '0.00' COMMENT '总数量',
+  `number_no` float(12,2) UNSIGNED NOT NULL DEFAULT '0.00' COMMENT '交易未完成数量',
   `addtime` int(11) NOT NULL COMMENT '单据创建时间'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -194,11 +194,34 @@ CREATE TABLE `s_deal` (
 --
 
 INSERT INTO `s_deal` (`id`, `bid`, `uid`, `type`, `price`, `status`, `number`, `number_no`, `addtime`) VALUES
-(1, 1, 1, 1, 2.02, 1, 500, 0, 1498437744),
-(2, 1, 2, 0, 3, 1, 500, 0, 1498437755),
-(4, 1, 1, 0, 201, 1, 1, 0, 1498550764),
-(34, 1, 1, 0, 2000, 1, 1, 0, 1498618605),
-(35, 1, 1, 0, 0, 1, 0, 200, 1498639585);
+(1, 1, 1, 1, '300.00', 0, 1000.00, 990.00, 1498720627),
+(2, 1, 1, 1, '200.4', 1, 10.00, 0.00, 1498789541),
+(3, 1, 1, 0, '200.4', 1, 10.00, 0.00, 1498789542),
+(4, 1, 1, 1, '200.4', 0, 10.00, 10.00, 1498789578),
+(5, 1, 1, 0, '200.4', 1, 10.00, 0.00, 1498789580),
+(6, 1, 1, 1, '300', 0, 500.00, 220.00, 1498790224),
+(7, 1, 1, 0, '300', 1, 50.00, 0.00, 1498790229),
+(8, 1, 1, 0, '300', 1, 50.00, 0.00, 1498790248),
+(9, 1, 1, 0, '300', 1, 10.00, 0.00, 1498790271),
+(10, 1, 1, 0, '300', 1, 10.00, 0.00, 1498790309),
+(11, 1, 1, 0, '300', 1, 10.00, 0.00, 1498790630),
+(12, 1, 1, 0, '300', 1, 20.00, 0.00, 1498790713),
+(13, 1, 1, 0, '300', 1, 20.00, 0.00, 1498791250),
+(14, 1, 1, 0, '300', 1, 20.00, 0.00, 1498791289),
+(15, 1, 1, 0, '300', 1, 20.00, 0.00, 1498791313),
+(16, 1, 1, 0, '200', 0, 10.00, 10.00, 1498791348),
+(17, 1, 1, 0, '200', 0, 10.00, 10.00, 1498791350),
+(18, 1, 1, 0, '300', 1, 10.00, 0.00, 1498791359),
+(19, 1, 1, 0, '300', 1, 10.00, 0.00, 1498791360),
+(20, 1, 1, 0, '300', 1, 10.00, 0.00, 1498791362),
+(21, 1, 1, 0, '300', 1, 10.00, 0.00, 1498791362),
+(22, 1, 1, 0, '300', 1, 10.00, 0.00, 1498791363),
+(23, 1, 1, 0, '300', 1, 10.00, 0.00, 1498791363),
+(24, 1, 1, 0, '300', 1, 10.00, 0.00, 1498792581),
+(25, 1, 1, 0, '3001', 0, 10.00, 10.00, 1498792585),
+(26, 1, 1, 0, '300', 1, 10.00, 0.00, 1498792599),
+(27, 1, 1, 0, '300.00', 1, 10.00, 0.00, 1498795047),
+(28, 1, 1, 0, '300', 1, 10.00, 0.00, 1498795055);
 
 -- --------------------------------------------------------
 
@@ -506,18 +529,18 @@ CREATE TABLE `s_u-b` (
   `id` int(11) NOT NULL,
   `uid` int(11) NOT NULL,
   `bid` int(11) NOT NULL,
-  `number` float NOT NULL COMMENT '数量'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+  `number` float(12,4) NOT NULL DEFAULT '0.0000' COMMENT '数量'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- 转存表中的数据 `s_u-b`
 --
 
 INSERT INTO `s_u-b` (`id`, `uid`, `bid`, `number`) VALUES
-(1, 1, 1, 0),
-(2, 1, 2, 0),
-(3, 1, 3, 0),
-(4, 1, 4, 0);
+(1, 1, 1, 260.0000),
+(2, 1, 2, 0.0000),
+(3, 1, 3, 0.0000),
+(4, 1, 4, 0.0000);
 
 -- --------------------------------------------------------
 
@@ -543,6 +566,7 @@ CREATE TABLE `s_user` (
   `uid` int(11) NOT NULL,
   `mobile` varchar(255) DEFAULT NULL,
   `nickname` varchar(255) DEFAULT NULL,
+  `money` varchar(255) NOT NULL DEFAULT '0.00' COMMENT '余额',
   `wechat` varchar(255) DEFAULT NULL,
   `qq` varchar(255) DEFAULT NULL,
   `avatar` varchar(255) DEFAULT NULL,
@@ -553,15 +577,15 @@ CREATE TABLE `s_user` (
   `deal_pwd` varchar(255) DEFAULT NULL,
   `id_status` tinyint(1) NOT NULL DEFAULT '0' COMMENT '身份证',
   `reg_time` int(11) DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- 转存表中的数据 `s_user`
 --
 
-INSERT INTO `s_user` (`uid`, `mobile`, `nickname`, `wechat`, `qq`, `avatar`, `login_pwd`, `email`, `mobile_status`, `email_status`, `deal_pwd`, `id_status`, `reg_time`) VALUES
-(0, NULL, '系统', NULL, NULL, NULL, NULL, NULL, 0, 0, NULL, 0, NULL),
-(1, '18805813155', '陈得柱', NULL, NULL, NULL, NULL, NULL, 0, 0, NULL, 0, NULL);
+INSERT INTO `s_user` (`uid`, `mobile`, `nickname`, `money`, `wechat`, `qq`, `avatar`, `login_pwd`, `email`, `mobile_status`, `email_status`, `deal_pwd`, `id_status`, `reg_time`) VALUES
+(0, NULL, '系统', '0.00', NULL, NULL, NULL, NULL, NULL, 0, 0, NULL, 0, NULL),
+(1, '18805813155', '陈得柱', '9036368.6', NULL, NULL, NULL, NULL, NULL, 0, 0, NULL, 0, NULL);
 
 --
 -- Indexes for dumped tables
@@ -735,7 +759,7 @@ ALTER TABLE `s_currency`
 -- 使用表AUTO_INCREMENT `s_deal`
 --
 ALTER TABLE `s_deal`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 --
 -- 使用表AUTO_INCREMENT `s_field`
 --
@@ -800,7 +824,7 @@ ALTER TABLE `s_tag_data`
 -- 使用表AUTO_INCREMENT `s_u-b`
 --
 ALTER TABLE `s_u-b`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- 使用表AUTO_INCREMENT `s_user`
 --
