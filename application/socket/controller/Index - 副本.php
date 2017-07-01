@@ -131,11 +131,13 @@ class Index extends Common{
 
                         //将资产信息发送给前台
                         $mreturn = [
-                            'rmoney'=>($noNumber*$data['price']),//总花费
+                            'rmoney'=>$smoney,//总花费
                             'type'=>3,
                         ];
                         $mreturn = json_encode($mreturn);
                         $connection->send($mreturn);
+
+
 
                         //这里要将$reutrn1与return2一起合并返回
 
@@ -164,11 +166,20 @@ class Index extends Common{
                                 {   
                                     $conn->send($return);
                                 }
+                         
+
+
+
+
+
 
                              break;
                         }else{
                             //该买单大于该卖单数量
-                        
+                        //////////////
+                        // 添加到交易记录表 //
+                        //待定        //
+                        //////////////
                         Db::startTrans();
                         try{
                             

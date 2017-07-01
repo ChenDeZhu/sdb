@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:58:"D:\wamp64\www\sdb/application/index\view\market\index.html";i:1498809752;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\header.html";i:1498697763;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\footer.html";i:1498450778;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:58:"D:\wamp64\www\sdb/application/index\view\market\index.html";i:1498898576;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\header.html";i:1498697763;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\footer.html";i:1498450778;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -121,55 +121,108 @@
             var data1 = '';
             ws.onmessage = function(e){
             	data1 = JSON.parse(e.data);
+            	console.log(data1);
                 switch(data1['type']){
-                	case 0:
-                		//添加买入委托信息
-                		html = '';
-		                html+='<tr><td>'+data1["price"]+'</td><td>'+data1["number"]+'</td><td id="'+data1['id']+'">'+data1["number_no"]+'</td></tr>'
-		                $('.buy').prepend(html);
-                		break;
-                	case 1:
+                	
+                	case 1:	
                 		//添加卖出委托信息
                 		html = '';
 		                html+='<tr><td>'+data1["price"]+'</td><td>'+data1["number"]+'</td><td id="'+data1['id']+'">'+data1["number_no"]+'</td></tr>'
 		                $('.sale').prepend(html);
                 		break;
-                	case 2:
-                		//修改委托信息
-                		$("#"+data1['id']).html(data1['number_no']);
-                		break;
+                	
 
-
-                		//可以将35\46封装在一个方法里,代码
-                	case 3:
-                		//可用资产修改
-                		var money = $('#money').html();
-                		money = money-data1['rmoney'];
+                	case 8:
+                		
+		            	//修改可用货币            		
+                		var currency = $('#currency').html();
+                		currency = Number(currency)-Number(data1['number_no']); 		
+                		$('#currency').html(currency);        		
+                		
                 		$('#money').html(money);
+                		//修改冻结货币
+                		var dcurrency = $('#dcurrency').html();
+                		dcurrency = Number(dcurrency)+Number(data1['number_no']);
+                		
+                		$('#dcurrency').html(dcurrency);
                 		break;
+
+
+
+
+
+                	
                 	case 4:
-                		//冻结资产修改
+                		//资产修改
                 		var money = $('#money').html();
                 		money = money-data1['rmoney'];
                 		var dmoney = $('#dmoney').html();
-                		dmoney = dmoney-0+data1['rmoney'];
+                		dmoney = Number(dmoney)-0+Number(data1['rmoney']);
                 		$('#money').html(money);
                 		$('#dmoney').html(dmoney);
+                		var money = $('#money').html();
+                		money = Number(money) - Number(data1['price'])
                 		break;    	
                 	case 5:
                 		//可用货币修改
                 		var currency = $('#currency').html();
                 		currency = currency-data1['rcurrency'];
                 		$('#currency').html(currency); 
+                		break;
                 	case 6:
                 		//冻结货币修改
-                		console.log(data1);
                 		var currency = $('#currency').html();
                 		currency = currency-data1['rcurrency'];
                 		var dcurrency = $('#dcurrency').html();
                 		dcurrency = Number(dcurrency)+Number(data1['rcurrency']);
                 		$('#currency').html(currency);
                 		$('#dcurrency').html(dcurrency);
+                		break;
+
+ /*-------------------------------------------------------------------------------------------*/               		
+                	//买方交易行为
+                	case 0:
+                		//添加买入委托信息
+                		html = '';
+		                html+='<tr><td>'+data1["price"]+'</td><td>'+data1["number"]+'</td><td id="'+data1['id']+'">'+data1["number_no"]+'</td></tr>'
+		                $('.buy').prepend(html);
+                		break;
+            		case 2:
+            		//修改委托信息
+            		$("#"+data1['id']).html(data1['number_no']);
+            		break;
+                	case 3:
+                		//可用资产修改
+                		var money = $('#money').html();
+                		money = Number(money)-(Number(data1['price'])*Number(data1['number']));
+                		$('#money').html(Number(money));
+                		//可用货币修改
+                		var currency = $('#currency').html();
+                		currency = Number(currency)-Number(data1['number']);
+                		$('#currency').html(currency); 
+                		break;
+		            case 9:
+		            	//修改可用货币            		
+                		var currency = $('#currency').html();
+                		currency = Number(currency)+Number(data1['number'])-Number(data1['number_no']); 		
+                		$('#currency').html(currency);        		
+                		//可用资产修改
+                		var money = $('#money').html();
+                		money = Number(money)-Number(data1['price'])*Number(data1['number']);
+                		$('#money').html(money);
+                		//修改冻结资金
+                		var dmoney = $('#dmoney').html();
+                		dmoney = Number(dmoney)+Number(data1['number_no'])*Number(data1['price']);
+                		
+                		$('#dmoney').html(dmoney);
+                		break;
+                	case 10:
+                		$("#"+data1['s']['id']).html(data1['s']['number_no']);
+                		html = '';
+		                html+='<tr><td>'+data1['b']["price"]+'</td><td>'+data1['b']["number"]+'</td><td id="'+data1['b']['id']+'">'+data1['b']["number_no"]+'</td></tr>'
+		                $('.buy').prepend(html);
+		                break;
+/*-------------------------------------------------------------------------------------------*/ 
                 	default:
                 		break;
                 }
