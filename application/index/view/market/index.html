@@ -6,10 +6,17 @@
 	border: 1px solid #000;
 	float: left;
 	margin-left: 20px;
+	width: 20%;
 }
 .box td{
 	text-align: center;
 	border-bottom: 1px solid #ccc;
+}
+.deal3{
+	color:green;
+}
+.deal4{
+	color:red;
 }
 </style>
 
@@ -19,10 +26,10 @@
 	数量：<input type="text" name="" placeholder="请输入数量" id="number">
 	金额：
 	<div>
-		<button type="button" id="buy">
+		<button type="button" id="buy" class="dealBtn" date-type='0'>
 			买入
 		</button>
-		<button type="button" id="sale">
+		<button type="button" id="sale" class="dealBtn" date-type='1'>
 			卖出
 		</button>
 	</div>
@@ -38,8 +45,8 @@
 	<div>
 		<table class="box">
 			<thead>
+				<tr><th colspan="3">买入委托</th></tr>
 				<tr>
-					
 					<th>买入价(￥)</th>
 					<th>需求总共买入量</th>
 					<th>剩余</th>
@@ -59,6 +66,7 @@
 	<div>
 		<table class="box">
 			<thead>
+				<tr><th colspan="3">卖出委托</th></tr>
 				<tr>
 					<th>卖出价(￥)</th>
 					<th>需求总共卖出量</th>
@@ -71,6 +79,31 @@
 					<td>{$v.price}</td>
 					<td>{$v.number}</td>
 					<td id="{$v.id}">{$v.number_no}</td>
+				</tr>
+				{/volist}
+			</tbody>
+		</table>
+	</div>
+	<div>
+
+		<table class="box">
+
+			<thead>
+			<tr>
+			<th colspan="3">最新成交</th>
+			</tr>
+				<tr>
+					<th>交易时间(￥)</th>
+					<th>成交价格</th>
+					<th>成交量</th>
+				</tr>
+			</thead>
+			<tbody class="deal">
+				{volist name="list3" id="v"}
+				<tr>
+					<td>{$v.addtime|date="H:i:s",###}</td>
+					<td>{$v.money}</td>
+					<td class="deal{$v['type']}">{$v.number}</td>
 				</tr>
 				{/volist}
 			</tbody>
@@ -89,135 +122,60 @@
             	data1 = JSON.parse(e.data);
             	console.log(data1);
                 switch(data1['type']){
-                	
-                	case 1:	
-                		//添加卖出委托信息
-                		html = '';
-		                html+='<tr><td>'+data1["price"]+'</td><td>'+data1["number"]+'</td><td id="'+data1['id']+'">'+data1["number_no"]+'</td></tr>'
-		                $('.sale').prepend(html);
-                		break;
-                	
-
-                	case 8:
-                		
-		            	//修改可用货币            		
-                		var currency = $('#currency').html();
-                		currency = Number(currency)-Number(data1['number_no']); 		
-                		$('#currency').html(currency);        		
-                		
-                		$('#money').html(money);
-                		//修改冻结货币
-                		var dcurrency = $('#dcurrency').html();
-                		dcurrency = Number(dcurrency)+Number(data1['number_no']);
-                		$('#dcurrency').html(dcurrency);
-                		break;
-
-
-
-
-
-                	
-                	case 4:
-                		//资产修改
-                		var money = $('#money').html();
-                		money = money-data1['rmoney'];
-                		var dmoney = $('#dmoney').html();
-                		dmoney = Number(dmoney)-0+Number(data1['rmoney']);
-                		$('#money').html(money);
-                		$('#dmoney').html(dmoney);
-                		var money = $('#money').html();
-                		money = Number(money) - Number(data1['price'])
-                		break;    	
-                	case 5:
-                		//可用货币修改
-                		var currency = $('#currency').html();
-                		currency = currency-data1['rcurrency'];
-                		$('#currency').html(currency); 
-                		break;
-                	case 6:
-                		//冻结货币修改
-                		var currency = $('#currency').html();
-                		currency = currency-data1['rcurrency'];
-                		var dcurrency = $('#dcurrency').html();
-                		dcurrency = Number(dcurrency)+Number(data1['rcurrency']);
-                		$('#currency').html(currency);
-                		$('#dcurrency').html(dcurrency);
-                		break;
-
- /*-------------------------------------------------------------------------------------------*/               		
                 	//买方交易行为
                 	case 0:
                 		//添加买入委托信息
-                		html = '';
-		                html+='<tr><td>'+data1["price"]+'</td><td>'+data1["number"]+'</td><td id="'+data1['id']+'">'+data1["number_no"]+'</td></tr>'
-		                $('.buy').prepend(html);
+                		add('buy');
+                		break;
+                	case 1:	
+                		//添加卖出委托信息
+                		add('sale');
                 		break;
             		case 2:
-            		//修改委托信息
-            		$("#"+data1['id']).html(data1['number_no']);
-            		break;
+            			//修改委托信息
+            			$("#"+data1['id']).html(data1['number_no']);
+            			//添加到交易记录
+            			html = '';
+            		  break;
+            		//自己的买入委托单完成
                 	case 3:
                 		//可用资产修改
-                		var money = $('#money').html();
-                		money = Number(money)-(Number(data1['price'])*Number(data1['number']));
-                		$('#money').html(Number(money));
-                		//可用货币修改
-                		var currency = $('#currency').html();
-                		currency = Number(currency)-Number(data1['number']);
-                		$('#currency').html(currency); 
+                		doneSelf(0);
                 		break;
-		            case 9:
-		            	//修改可用货币            		
-                		var currency = $('#currency').html();
-                		currency = Number(currency)+Number(data1['number'])-Number(data1['number_no']); 		
-                		$('#currency').html(currency);        		
+                	//自己的卖出委托单完成
+                	case 4:
                 		//可用资产修改
-                		var money = $('#money').html();
-                		money = Number(money)-Number(data1['price'])*Number(data1['number']);
-                		$('#money').html(money);
-                		//修改冻结资金
-                		var dmoney = $('#dmoney').html();
-                		dmoney = Number(dmoney)+Number(data1['number_no'])*Number(data1['price']);
-                		
-                		$('#dmoney').html(dmoney);
+                		doneSelf(1);
                 		break;
+                	//不存在符合条件的买单或部分完成
+                	case 8:
+                        comPart(0);
+                		break;
+                	//不存在符合条件的卖单或交易部分完成
+		            case 9:
+                        comPart(1);
+                		break;
+                		//自己的买入委托单完成
                 	case 10:
-                		$("#"+data1['s']['id']).html(data1['s']['number_no']);
-                		html = '';
-		                html+='<tr><td>'+data1['b']["price"]+'</td><td>'+data1['b']["number"]+'</td><td id="'+data1['b']['id']+'">'+data1['b']["number_no"]+'</td></tr>'
-		                $('.buy').prepend(html);
+                        doneSelfAll(3);
+		                break;
+		                //自己的卖出委托单完成
+                	case 11:
+		                doneSelfAll(4);
 		                break;
 /*-------------------------------------------------------------------------------------------*/ 
                 	default:
                 		break;
                 }
-            };
-            document.getElementById('buy').addEventListener('click',function(){
-            	data = {}
-            	data['price'] = document.getElementById('price').value;
-            	data['number_no'] = document.getElementById('number').value;
-            	//type 0表示买入委托
-            	data['type'] = 0;
-            	data['bid'] = 1;
-            	if(!data['price']){
-            		alert('请输出价格');
-            		return;
-            	}
-            	if(!data['number_no']){
-            		alert('请输出数量');
-            		return;
-            	}
-            	// console.log(data);
-            	data = JSON.stringify(data);
-	            ws.send(data); 
-	        })
-            $('#sale').click(function(event) {
+            };      
+            $('.dealBtn').click(function(event) {
+            	type = $(this).attr('date-type');
             	data = {};
             	data['bid'] = 1;
             	data['price'] = $('#price').val();
             	data['number_no'] = $('#number').val();
             	//type1：表示卖出委托
-            	data['type'] = 1;
+            	data['type'] = type;
             	if(!data['price']){
             		alert('请输出价格');
             		return;

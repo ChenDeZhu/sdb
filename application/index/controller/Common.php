@@ -18,8 +18,9 @@ class Common extends Controller{
 	 * [验证登陆]
 	 */
 	public function isLogin(){
+		
 		if(input('session.uid')){
-			return ture;
+			return true;
 		}else{
 			
 		}
