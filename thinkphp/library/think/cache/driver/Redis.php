@@ -29,7 +29,7 @@ class Redis extends Driver
         'select'     => 0,
         'timeout'    => 0,
         'expire'     => 0,
-        'persistent' => false,
+        'persistent' => true,
         'prefix'     => '',
     ];
 

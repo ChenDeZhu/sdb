@@ -1,4 +1,39 @@
-{include file="./public/header" /}
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:58:"D:\wamp64\www\sdb/application/index\view\market\index.html";i:1499243810;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\header.html";i:1499133169;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\footer.html";i:1498450778;}*/ ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+
+	<script type="text/javascript" src="__PUBLIC__/home/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/home/common.js"></script>
+</head>
+<style type="text/css">
+	.box{
+		border: 1px solid #000;
+		margin-top: 10px;
+		width: 200px;
+	}
+	nav ul li{
+		list-style-type:none;
+		float: left;
+		margin-right: 20px;
+	}
+	.clear{
+		clear: both;
+	}
+</style>
+<body>
+<nav>
+	<ul>
+		<li><a href="<?php echo url('Index/index'); ?>">首页</a></li>
+		<li><a href="<?php echo url('Trade/index'); ?>">交易中心</a></li>
+		<li><a href="<?php echo url('Market/index'); ?>">行情图表</a></li>
+		<li><a href="<?php echo url('Account/index'); ?>">资金管理</a></li>
+		<li><a href="<?php echo url('User/index'); ?>">个人中心</a></li>
+	</ul>
+</nav>
+<div class="clear"></div>
 行情图表
 <style type="text/css" >
 
@@ -37,11 +72,11 @@
 <hr>
 <div class="weituo">
 	委托信息
-	<p>可用资产：<span id="money">{$money}</span>￥</p>
-	<p>可用币种数量：<span id="currency">{$currency}</span></p>
+	<p>可用资产：<span id="money"><?php echo $money; ?></span>￥</p>
+	<p>可用币种数量：<span id="currency"><?php echo $currency; ?></span></p>
 
-	<p>冻结资产：<span id="dmoney">{$dmoney}</span>￥</p>
-	<p>冻结币种数量：<span id="dcurrency">{$dcurrency}</span></p>
+	<p>冻结资产：<span id="dmoney"><?php echo $dmoney; ?></span>￥</p>
+	<p>冻结币种数量：<span id="dcurrency"><?php echo $dcurrency; ?></span></p>
 	<div>
 		<table class="box">
 			<thead>
@@ -52,12 +87,12 @@
 				</tr>
 			</thead>
 			<tbody class="buy">
-				{volist name="list1" id="v"}
+				<?php if(is_array($list1) || $list1 instanceof \think\Collection || $list1 instanceof \think\Paginator): $i = 0; $__LIST__ = $list1;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?>
 				<tr>
-					<td>{$v.price}</td>
-					<td>{$v.number}</td>
+					<td><?php echo $v['price']; ?></td>
+					<td><?php echo $v['number']; ?></td>
 				</tr>
-				{/volist}
+				<?php endforeach; endif; else: echo "" ;endif; ?>
 			</tbody>
 		</table>
 	</div>
@@ -71,12 +106,12 @@
 				</tr>
 			</thead>
 			<tbody class="sale">
-				{volist name="list2" id="v"}
+				<?php if(is_array($list2) || $list2 instanceof \think\Collection || $list2 instanceof \think\Paginator): $i = 0; $__LIST__ = $list2;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?>
 				<tr>
-					<td>{$v.price}</td>
-					<td>{$v.number}</td>
+					<td><?php echo $v['price']; ?></td>
+					<td><?php echo $v['number']; ?></td>
 				</tr>
-				{/volist}
+				<?php endforeach; endif; else: echo "" ;endif; ?>
 			</tbody>
 		</table>
 	</div>
@@ -93,13 +128,13 @@
 				</tr>
 			</thead>
 			<tbody class="deal">
-				{volist name="list3" id="v"}
+				<?php if(is_array($list3) || $list3 instanceof \think\Collection || $list3 instanceof \think\Paginator): $i = 0; $__LIST__ = $list3;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?>
 				<tr>
-					<td>{$v.addtime|date="H:i:s",###}</td>
-					<td>{$v.money}</td>
-					<td class="deal{$v['type']}">{$v.number}</td>
+					<td><?php echo date("H:i:s",$v['addtime']); ?></td>
+					<td><?php echo $v['money']; ?></td>
+					<td class="deal<?php echo $v['type']; ?>"><?php echo $v['number']; ?></td>
 				</tr>
-				{/volist}
+				<?php endforeach; endif; else: echo "" ;endif; ?>
 			</tbody>
 		</table>
 	</div>
@@ -204,4 +239,5 @@
             });
     </script>
     
-{include file="./public/footer" /}
+</body>
+</html>

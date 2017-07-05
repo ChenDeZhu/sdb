@@ -5,14 +5,10 @@
              */
             function add(type){
             	html = '';
-            	data = {};
-            	$.each(data, function(index, val) {
-            		 
-
-            	});
-                html+='<tr><td>'+data1["price"]+'</td><td>'+data1["number"]+'</td><td id="'+data1['id']+'">'+data1["number_no"]+'</td></tr>'
-
-                $('.'+type).prepend(html);
+            	$.each(data1[type], function(index, val) {
+                    html +='<tr><td>'+val["price"]+'</td><td>'+val["number"]+'</td></tr>'
+                });
+                $('.'+type).html(html);
             }
             /**
              * [发起行为者的委托信息完成,改变资产]
@@ -40,13 +36,11 @@
              * @param  {[type]} type [0:买方发起的行为 1：卖方发起的行为]
              */
             function comPart(type){
-
                     var money = $('#money').html();
                     var currency = $('#currency').html();
                     var dcurrency = $('#dcurrency').html();
                     var dmoney = $('#dmoney').html();
-                    var dealnumber = (Number(data1["number"])-Number(data1["number_no"]));
-                    dealnumber = dealnumber.toFixed(6);
+                    
                     if (type==0) {
                         currency = Number(currency)-Number(data1['number']);        
                         money = Number(money)+Number(data1['price'])*(Number(data1['number'])-Number(data1['number_no']));
@@ -54,22 +48,14 @@
                         dcurrency = Number(dcurrency)+Number(data1['number_no']);
                         dcurrency = dcurrency.toFixed(6);
                         $('#dcurrency').html(dcurrency); 
-                        if(data1['time']){
-                            //添加到交易记录
-                            html1 = '<tr><td>'+data1["time"]+'</td><td>'+data1['price']+'</td><td class="deal4">'+dealnumber+'</td></tr>'
-                            $(".deal").prepend(html1);
-                        }
+                        
                     }else{                   
                         currency = Number(currency)+Number(data1['number'])-Number(data1['number_no']);          
                         money = Number(money)-Number(data1['price'])*Number(data1['number']);            
                         dmoney = Number(dmoney)+Number(data1['number_no'])*Number(data1['price']);
                         dmoney = dmoney.toFixed(2);
                         $('#dmoney').html(dmoney); 
-                        if(data1['time']){
-                            //添加到交易记录
-                            html1 = '<tr><td>'+data1["time"]+'</td><td>'+data1['price']+'</td><td class="deal3">'+dealnumber+'</td></tr>'
-                            $(".deal").prepend(html1);
-                        }
+                        
                     }
                     money = money.toFixed(2);
                     currency = currency.toFixed(6);

@@ -2,9 +2,8 @@
 namespace app\index\controller;
 use think\Controller;
 use think\Session;
-class Common extends Controller{
-	
 
+class Common extends Controller{
 	/**
 	 * [_initialize 查询出公司基本信息]
 	 *
@@ -25,4 +24,6 @@ class Common extends Controller{
 			
 		}
 	}
+	
+
 }
