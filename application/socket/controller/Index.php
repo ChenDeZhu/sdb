@@ -499,9 +499,9 @@ class Index extends Common{
                             $arrSort[$key][$k] = $value;  
                         }  
                     }
-                    array_multisort($arrSort['price'], constant('SORT_DESC'), $sale);
+                    array_multisort($arrSort['price'], constant('SORT_ASC'), $sale);
                 }
-                // unset($data[201]):'';
+                //unset($data[201]):'';
                 break;
             case '10':
                 foreach ($sale as $k => $v) {
@@ -542,8 +542,9 @@ class Index extends Common{
                         unset($sale[$k]);
                     }
                 }
+                break;
             case '13':
-                //买单一部分部分完成
+                //卖单一部分部分完成
                 array_push($sale,$data1);
                  $arrSort = [];
                     foreach($sale AS $k => $v){  
@@ -551,11 +552,11 @@ class Index extends Common{
                             $arrSort[$key][$k] = $value;  
                         }  
                     }
-                array_multisort($arrSort['price'], constant('SORT_DESC'), $sale);
+                array_multisort($arrSort['price'], constant('SORT_ASC'), $sale);
                 //清除卖单完成的委托信息
-                foreach($sale as $k =>$v){
+                foreach($buy as $k =>$v){
                     if($v['price'] == $data['price']){
-                        unset($sale[$k]);
+                        unset($buy[$k]);
                     }
                 }
 

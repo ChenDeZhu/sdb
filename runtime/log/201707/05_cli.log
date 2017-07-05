@@ -5071,3 +5071,410 @@
 [ 2017-07-05T16:42:48+08:00 ][ sql ] [ SQL ] INSERT INTO `s_deal_s` (`bid` , `number` , `number_no` , `addtime` , `uid` , `price`) VALUES (1 , 20 , 20 , 1499244168 , 1 , 4) [ RunTime:0.000000s ]
 [ 2017-07-05T16:42:48+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number-20  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.000000s ]
 [ 2017-07-05T16:42:48+08:00 ][ sql ] [ SQL ] SELECT `id`,`bid`,`price`,`number_no`,`number`,`uid` FROM `s_deal_b` WHERE  `bid` = 1  AND `status` = 0  AND `price` = 4.00 ORDER BY addtime asc [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:18+08:00 ][ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+[ 2017-07-05T16:48:18+08:00 ][ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ 2017-07-05T16:48:18+08:00 ][ info ] [ BIND ] 'socket'
+[ 2017-07-05T16:48:18+08:00 ][ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'socket',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ 2017-07-05T16:48:18+08:00 ][ info ] [ HEADER ] array (
+)
+[ 2017-07-05T16:48:18+08:00 ][ info ] [ PARAM ] array (
+)
+[ 2017-07-05T16:48:18+08:00 ][ info ] [ DB ] INIT mysql
+[ 2017-07-05T16:48:18+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:dbname=sdb;host=localhost;port=3306;charset=utf8
+[ 2017-07-05T16:48:18+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `s_system` [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:18+08:00 ][ sql ] [ SQL ] SELECT * FROM `s_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:18+08:00 ][ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ 2017-07-05T16:48:18+08:00 ][ info ] [ RUN ] app\socket\controller\Index->index[ D:\wamp64\www\sdb\application\socket\controller\Index.php ]
+[ 2017-07-05T16:48:26+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `s_user` [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:26+08:00 ][ sql ] [ SQL ] SELECT `money` FROM `s_user` WHERE  `uid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:26+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `s_deal_b` [ RunTime:0.015600s ]
+[ 2017-07-05T16:48:26+08:00 ][ sql ] [ SQL ] INSERT INTO `s_deal_b` (`bid` , `number` , `number_no` , `addtime` , `uid` , `price`) VALUES (1 , 1 , 1 , 1499244506 , 1 , 1) [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:26+08:00 ][ info ] [ CACHE ] INIT File
+[ 2017-07-05T16:48:26+08:00 ][ sql ] [ SQL ] UPDATE `s_user`  SET `money`=money-1  WHERE  `uid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:26+08:00 ][ sql ] [ SQL ] SELECT `id`,`bid`,`price`,`number_no`,`number`,`uid` FROM `s_deal_s` WHERE  `bid` = 1  AND `status` = 0  AND `price` = 1.00 ORDER BY addtime asc [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:27+08:00 ][ sql ] [ SQL ] SELECT `money` FROM `s_user` WHERE  `uid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:27+08:00 ][ sql ] [ SQL ] INSERT INTO `s_deal_b` (`bid` , `number` , `number_no` , `addtime` , `uid` , `price`) VALUES (1 , 1 , 1 , 1499244507 , 1 , 1) [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:27+08:00 ][ sql ] [ SQL ] UPDATE `s_user`  SET `money`=money-1  WHERE  `uid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:27+08:00 ][ sql ] [ SQL ] SELECT `id`,`bid`,`price`,`number_no`,`number`,`uid` FROM `s_deal_s` WHERE  `bid` = 1  AND `status` = 0  AND `price` = 1.00 ORDER BY addtime asc [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:27+08:00 ][ sql ] [ SQL ] SELECT `money` FROM `s_user` WHERE  `uid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:27+08:00 ][ sql ] [ SQL ] INSERT INTO `s_deal_b` (`bid` , `number` , `number_no` , `addtime` , `uid` , `price`) VALUES (1 , 1 , 1 , 1499244507 , 1 , 1) [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:27+08:00 ][ sql ] [ SQL ] UPDATE `s_user`  SET `money`=money-1  WHERE  `uid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:27+08:00 ][ sql ] [ SQL ] SELECT `id`,`bid`,`price`,`number_no`,`number`,`uid` FROM `s_deal_s` WHERE  `bid` = 1  AND `status` = 0  AND `price` = 1.00 ORDER BY addtime asc [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:28+08:00 ][ sql ] [ SQL ] SELECT `money` FROM `s_user` WHERE  `uid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:28+08:00 ][ sql ] [ SQL ] INSERT INTO `s_deal_b` (`bid` , `number` , `number_no` , `addtime` , `uid` , `price`) VALUES (1 , 1 , 1 , 1499244508 , 1 , 1) [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:28+08:00 ][ sql ] [ SQL ] UPDATE `s_user`  SET `money`=money-1  WHERE  `uid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:28+08:00 ][ sql ] [ SQL ] SELECT `id`,`bid`,`price`,`number_no`,`number`,`uid` FROM `s_deal_s` WHERE  `bid` = 1  AND `status` = 0  AND `price` = 1.00 ORDER BY addtime asc [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:28+08:00 ][ sql ] [ SQL ] SELECT `money` FROM `s_user` WHERE  `uid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:28+08:00 ][ sql ] [ SQL ] INSERT INTO `s_deal_b` (`bid` , `number` , `number_no` , `addtime` , `uid` , `price`) VALUES (1 , 1 , 1 , 1499244508 , 1 , 1) [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:28+08:00 ][ sql ] [ SQL ] UPDATE `s_user`  SET `money`=money-1  WHERE  `uid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:28+08:00 ][ sql ] [ SQL ] SELECT `id`,`bid`,`price`,`number_no`,`number`,`uid` FROM `s_deal_s` WHERE  `bid` = 1  AND `status` = 0  AND `price` = 1.00 ORDER BY addtime asc [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:29+08:00 ][ sql ] [ SQL ] SELECT `money` FROM `s_user` WHERE  `uid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:29+08:00 ][ sql ] [ SQL ] INSERT INTO `s_deal_b` (`bid` , `number` , `number_no` , `addtime` , `uid` , `price`) VALUES (1 , 1 , 1 , 1499244509 , 1 , 1) [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:29+08:00 ][ sql ] [ SQL ] UPDATE `s_user`  SET `money`=money-1  WHERE  `uid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:29+08:00 ][ sql ] [ SQL ] SELECT `id`,`bid`,`price`,`number_no`,`number`,`uid` FROM `s_deal_s` WHERE  `bid` = 1  AND `status` = 0  AND `price` = 1.00 ORDER BY addtime asc [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:39+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `s_u-b` [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:39+08:00 ][ sql ] [ SQL ] SELECT `number` FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:39+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `s_deal_s` [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:39+08:00 ][ sql ] [ SQL ] INSERT INTO `s_deal_s` (`bid` , `number` , `number_no` , `addtime` , `uid` , `price`) VALUES (1 , 20 , 20 , 1499244519 , 1 , 1) [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:39+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number-20  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:39+08:00 ][ sql ] [ SQL ] SELECT `id`,`bid`,`price`,`number_no`,`number`,`uid` FROM `s_deal_b` WHERE  `bid` = 1  AND `status` = 0  AND `price` = 1.00 ORDER BY addtime asc [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:39+08:00 ][ sql ] [ SQL ] UPDATE `s_deal_b`  SET `status`=1,`number_no`=0  WHERE  `id` = 701 [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:39+08:00 ][ sql ] [ SQL ] UPDATE `s_user`  SET `money`=money+12.000  WHERE  `uid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:39+08:00 ][ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:39+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number+12.000000  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:39+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `s_mrecord` [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:39+08:00 ][ sql ] [ SQL ] INSERT INTO `s_mrecord` (`uid` , `fuid` , `number` , `bid` , `addtime` , `money` , `status` , `type` , `oid`) VALUES (1 , 1 , 12 , 1 , 1499244519 , 1 , 1 , 4 , '20170705147696') [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:39+08:00 ][ sql ] [ SQL ] UPDATE `s_deal_b`  SET `status`=1,`number_no`=0  WHERE  `id` = 705 [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:39+08:00 ][ sql ] [ SQL ] UPDATE `s_user`  SET `money`=money+1.000  WHERE  `uid` = 1 [ RunTime:0.001000s ]
+[ 2017-07-05T16:48:39+08:00 ][ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:39+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number+1.000000  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.001000s ]
+[ 2017-07-05T16:48:39+08:00 ][ sql ] [ SQL ] INSERT INTO `s_mrecord` (`uid` , `fuid` , `number` , `bid` , `addtime` , `money` , `status` , `type` , `oid`) VALUES (1 , 1 , 1 , 1 , 1499244519 , 1 , 1 , 4 , '20170705147696') [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:39+08:00 ][ sql ] [ SQL ] UPDATE `s_deal_b`  SET `status`=1,`number_no`=0  WHERE  `id` = 706 [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:39+08:00 ][ sql ] [ SQL ] UPDATE `s_user`  SET `money`=money+1.000  WHERE  `uid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:39+08:00 ][ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:39+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number+1.000000  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:39+08:00 ][ sql ] [ SQL ] INSERT INTO `s_mrecord` (`uid` , `fuid` , `number` , `bid` , `addtime` , `money` , `status` , `type` , `oid`) VALUES (1 , 1 , 1 , 1 , 1499244519 , 1 , 1 , 4 , '20170705147696') [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:39+08:00 ][ sql ] [ SQL ] UPDATE `s_deal_b`  SET `status`=1,`number_no`=0  WHERE  `id` = 707 [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:39+08:00 ][ sql ] [ SQL ] UPDATE `s_user`  SET `money`=money+1.000  WHERE  `uid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:39+08:00 ][ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:39+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number+1.000000  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:39+08:00 ][ sql ] [ SQL ] INSERT INTO `s_mrecord` (`uid` , `fuid` , `number` , `bid` , `addtime` , `money` , `status` , `type` , `oid`) VALUES (1 , 1 , 1 , 1 , 1499244519 , 1 , 1 , 4 , '20170705147696') [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:39+08:00 ][ sql ] [ SQL ] UPDATE `s_deal_b`  SET `status`=1,`number_no`=0  WHERE  `id` = 708 [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:39+08:00 ][ sql ] [ SQL ] UPDATE `s_user`  SET `money`=money+1.000  WHERE  `uid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:39+08:00 ][ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:39+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number+1.000000  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:39+08:00 ][ sql ] [ SQL ] INSERT INTO `s_mrecord` (`uid` , `fuid` , `number` , `bid` , `addtime` , `money` , `status` , `type` , `oid`) VALUES (1 , 1 , 1 , 1 , 1499244519 , 1 , 1 , 4 , '20170705147696') [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:39+08:00 ][ sql ] [ SQL ] UPDATE `s_deal_b`  SET `status`=1,`number_no`=0  WHERE  `id` = 709 [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:39+08:00 ][ sql ] [ SQL ] UPDATE `s_user`  SET `money`=money+1.000  WHERE  `uid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:39+08:00 ][ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:39+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number+1.000000  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:39+08:00 ][ sql ] [ SQL ] INSERT INTO `s_mrecord` (`uid` , `fuid` , `number` , `bid` , `addtime` , `money` , `status` , `type` , `oid`) VALUES (1 , 1 , 1 , 1 , 1499244519 , 1 , 1 , 4 , '20170705147696') [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:39+08:00 ][ sql ] [ SQL ] UPDATE `s_deal_b`  SET `status`=1,`number_no`=0  WHERE  `id` = 710 [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:39+08:00 ][ sql ] [ SQL ] UPDATE `s_user`  SET `money`=money+1.000  WHERE  `uid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:39+08:00 ][ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:39+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number+1.000000  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:39+08:00 ][ sql ] [ SQL ] INSERT INTO `s_mrecord` (`uid` , `fuid` , `number` , `bid` , `addtime` , `money` , `status` , `type` , `oid`) VALUES (1 , 1 , 1 , 1 , 1499244519 , 1 , 1 , 4 , '20170705147696') [ RunTime:0.000000s ]
+[ 2017-07-05T16:48:39+08:00 ][ sql ] [ SQL ] UPDATE `s_deal_s`  SET `status`=0,`number_no`=2  WHERE  `id` = 338 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:20+08:00 ][ sql ] [ SQL ] SELECT `number` FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:20+08:00 ][ sql ] [ SQL ] INSERT INTO `s_deal_s` (`bid` , `number` , `number_no` , `addtime` , `uid` , `price`) VALUES (1 , 1 , 1 , 1499244680 , 1 , 1) [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:20+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number-1  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:20+08:00 ][ sql ] [ SQL ] SELECT `id`,`bid`,`price`,`number_no`,`number`,`uid` FROM `s_deal_b` WHERE  `bid` = 1  AND `status` = 0  AND `price` = 1.00 ORDER BY addtime asc [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:20+08:00 ][ sql ] [ SQL ] SELECT `number` FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:20+08:00 ][ sql ] [ SQL ] INSERT INTO `s_deal_s` (`bid` , `number` , `number_no` , `addtime` , `uid` , `price`) VALUES (1 , 1 , 1 , 1499244680 , 1 , 1) [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:20+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number-1  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.015600s ]
+[ 2017-07-05T16:51:20+08:00 ][ sql ] [ SQL ] SELECT `id`,`bid`,`price`,`number_no`,`number`,`uid` FROM `s_deal_b` WHERE  `bid` = 1  AND `status` = 0  AND `price` = 1.00 ORDER BY addtime asc [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:20+08:00 ][ sql ] [ SQL ] SELECT `number` FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:20+08:00 ][ sql ] [ SQL ] INSERT INTO `s_deal_s` (`bid` , `number` , `number_no` , `addtime` , `uid` , `price`) VALUES (1 , 1 , 1 , 1499244680 , 1 , 1) [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:20+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number-1  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:20+08:00 ][ sql ] [ SQL ] SELECT `id`,`bid`,`price`,`number_no`,`number`,`uid` FROM `s_deal_b` WHERE  `bid` = 1  AND `status` = 0  AND `price` = 1.00 ORDER BY addtime asc [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:21+08:00 ][ sql ] [ SQL ] SELECT `number` FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:21+08:00 ][ sql ] [ SQL ] INSERT INTO `s_deal_s` (`bid` , `number` , `number_no` , `addtime` , `uid` , `price`) VALUES (1 , 1 , 1 , 1499244681 , 1 , 1) [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:21+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number-1  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:21+08:00 ][ sql ] [ SQL ] SELECT `id`,`bid`,`price`,`number_no`,`number`,`uid` FROM `s_deal_b` WHERE  `bid` = 1  AND `status` = 0  AND `price` = 1.00 ORDER BY addtime asc [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:21+08:00 ][ sql ] [ SQL ] SELECT `number` FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:21+08:00 ][ sql ] [ SQL ] INSERT INTO `s_deal_s` (`bid` , `number` , `number_no` , `addtime` , `uid` , `price`) VALUES (1 , 1 , 1 , 1499244681 , 1 , 1) [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:21+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number-1  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:21+08:00 ][ sql ] [ SQL ] SELECT `id`,`bid`,`price`,`number_no`,`number`,`uid` FROM `s_deal_b` WHERE  `bid` = 1  AND `status` = 0  AND `price` = 1.00 ORDER BY addtime asc [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:21+08:00 ][ sql ] [ SQL ] SELECT `number` FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:21+08:00 ][ sql ] [ SQL ] INSERT INTO `s_deal_s` (`bid` , `number` , `number_no` , `addtime` , `uid` , `price`) VALUES (1 , 1 , 1 , 1499244681 , 1 , 1) [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:21+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number-1  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:21+08:00 ][ sql ] [ SQL ] SELECT `id`,`bid`,`price`,`number_no`,`number`,`uid` FROM `s_deal_b` WHERE  `bid` = 1  AND `status` = 0  AND `price` = 1.00 ORDER BY addtime asc [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:21+08:00 ][ sql ] [ SQL ] SELECT `number` FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:21+08:00 ][ sql ] [ SQL ] INSERT INTO `s_deal_s` (`bid` , `number` , `number_no` , `addtime` , `uid` , `price`) VALUES (1 , 1 , 1 , 1499244681 , 1 , 1) [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:21+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number-1  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:21+08:00 ][ sql ] [ SQL ] SELECT `id`,`bid`,`price`,`number_no`,`number`,`uid` FROM `s_deal_b` WHERE  `bid` = 1  AND `status` = 0  AND `price` = 1.00 ORDER BY addtime asc [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:21+08:00 ][ sql ] [ SQL ] SELECT `number` FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:21+08:00 ][ sql ] [ SQL ] INSERT INTO `s_deal_s` (`bid` , `number` , `number_no` , `addtime` , `uid` , `price`) VALUES (1 , 1 , 1 , 1499244681 , 1 , 1) [ RunTime:0.015600s ]
+[ 2017-07-05T16:51:21+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number-1  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:21+08:00 ][ sql ] [ SQL ] SELECT `id`,`bid`,`price`,`number_no`,`number`,`uid` FROM `s_deal_b` WHERE  `bid` = 1  AND `status` = 0  AND `price` = 1.00 ORDER BY addtime asc [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:21+08:00 ][ sql ] [ SQL ] SELECT `number` FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:21+08:00 ][ sql ] [ SQL ] INSERT INTO `s_deal_s` (`bid` , `number` , `number_no` , `addtime` , `uid` , `price`) VALUES (1 , 1 , 1 , 1499244681 , 1 , 1) [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:21+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number-1  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:21+08:00 ][ sql ] [ SQL ] SELECT `id`,`bid`,`price`,`number_no`,`number`,`uid` FROM `s_deal_b` WHERE  `bid` = 1  AND `status` = 0  AND `price` = 1.00 ORDER BY addtime asc [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:22+08:00 ][ sql ] [ SQL ] SELECT `number` FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:22+08:00 ][ sql ] [ SQL ] INSERT INTO `s_deal_s` (`bid` , `number` , `number_no` , `addtime` , `uid` , `price`) VALUES (1 , 1 , 1 , 1499244682 , 1 , 1) [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:22+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number-1  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:22+08:00 ][ sql ] [ SQL ] SELECT `id`,`bid`,`price`,`number_no`,`number`,`uid` FROM `s_deal_b` WHERE  `bid` = 1  AND `status` = 0  AND `price` = 1.00 ORDER BY addtime asc [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:22+08:00 ][ sql ] [ SQL ] SELECT `number` FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:22+08:00 ][ sql ] [ SQL ] INSERT INTO `s_deal_s` (`bid` , `number` , `number_no` , `addtime` , `uid` , `price`) VALUES (1 , 1 , 1 , 1499244682 , 1 , 1) [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:22+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number-1  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:22+08:00 ][ sql ] [ SQL ] SELECT `id`,`bid`,`price`,`number_no`,`number`,`uid` FROM `s_deal_b` WHERE  `bid` = 1  AND `status` = 0  AND `price` = 1.00 ORDER BY addtime asc [ RunTime:0.015600s ]
+[ 2017-07-05T16:51:22+08:00 ][ sql ] [ SQL ] SELECT `number` FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.015600s ]
+[ 2017-07-05T16:51:22+08:00 ][ sql ] [ SQL ] INSERT INTO `s_deal_s` (`bid` , `number` , `number_no` , `addtime` , `uid` , `price`) VALUES (1 , 1 , 1 , 1499244682 , 1 , 1) [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:22+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number-1  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:22+08:00 ][ sql ] [ SQL ] SELECT `id`,`bid`,`price`,`number_no`,`number`,`uid` FROM `s_deal_b` WHERE  `bid` = 1  AND `status` = 0  AND `price` = 1.00 ORDER BY addtime asc [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:22+08:00 ][ sql ] [ SQL ] SELECT `number` FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:22+08:00 ][ sql ] [ SQL ] INSERT INTO `s_deal_s` (`bid` , `number` , `number_no` , `addtime` , `uid` , `price`) VALUES (1 , 1 , 1 , 1499244682 , 1 , 1) [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:22+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number-1  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:22+08:00 ][ sql ] [ SQL ] SELECT `id`,`bid`,`price`,`number_no`,`number`,`uid` FROM `s_deal_b` WHERE  `bid` = 1  AND `status` = 0  AND `price` = 1.00 ORDER BY addtime asc [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] SELECT `money` FROM `s_user` WHERE  `uid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] INSERT INTO `s_deal_b` (`bid` , `number` , `number_no` , `addtime` , `uid` , `price`) VALUES (1 , 20 , 20 , 1499244684 , 1 , 1) [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] UPDATE `s_user`  SET `money`=money-20  WHERE  `uid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] SELECT `id`,`bid`,`price`,`number_no`,`number`,`uid` FROM `s_deal_s` WHERE  `bid` = 1  AND `status` = 0  AND `price` = 1.00 ORDER BY addtime asc [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] UPDATE `s_deal_s`  SET `status`=1,`number_no`=0  WHERE  `id` = 338 [ RunTime:0.015600s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] UPDATE `s_user`  SET `money`=money+2.000  WHERE  `uid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number+2.000000  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] INSERT INTO `s_mrecord` (`uid` , `fuid` , `number` , `bid` , `addtime` , `money` , `status` , `type` , `oid`) VALUES (1 , 1 , 2 , 1 , 1499244684 , 1 , 1 , 3 , '20170705192416') [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] UPDATE `s_deal_s`  SET `status`=1,`number_no`=0  WHERE  `id` = 339 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] UPDATE `s_user`  SET `money`=money+1.000  WHERE  `uid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number+1.000000  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] INSERT INTO `s_mrecord` (`uid` , `fuid` , `number` , `bid` , `addtime` , `money` , `status` , `type` , `oid`) VALUES (1 , 1 , 1 , 1 , 1499244684 , 1 , 1 , 3 , '20170705192416') [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] UPDATE `s_deal_s`  SET `status`=1,`number_no`=0  WHERE  `id` = 340 [ RunTime:0.001001s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] UPDATE `s_user`  SET `money`=money+1.000  WHERE  `uid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number+1.000000  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] INSERT INTO `s_mrecord` (`uid` , `fuid` , `number` , `bid` , `addtime` , `money` , `status` , `type` , `oid`) VALUES (1 , 1 , 1 , 1 , 1499244684 , 1 , 1 , 3 , '20170705192416') [ RunTime:0.001000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] UPDATE `s_deal_s`  SET `status`=1,`number_no`=0  WHERE  `id` = 341 [ RunTime:0.001000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] UPDATE `s_user`  SET `money`=money+1.000  WHERE  `uid` = 1 [ RunTime:0.001000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number+1.000000  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] INSERT INTO `s_mrecord` (`uid` , `fuid` , `number` , `bid` , `addtime` , `money` , `status` , `type` , `oid`) VALUES (1 , 1 , 1 , 1 , 1499244684 , 1 , 1 , 3 , '20170705192416') [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] UPDATE `s_deal_s`  SET `status`=1,`number_no`=0  WHERE  `id` = 342 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] UPDATE `s_user`  SET `money`=money+1.000  WHERE  `uid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.001001s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number+1.000000  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] INSERT INTO `s_mrecord` (`uid` , `fuid` , `number` , `bid` , `addtime` , `money` , `status` , `type` , `oid`) VALUES (1 , 1 , 1 , 1 , 1499244684 , 1 , 1 , 3 , '20170705192416') [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] UPDATE `s_deal_s`  SET `status`=1,`number_no`=0  WHERE  `id` = 343 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] UPDATE `s_user`  SET `money`=money+1.000  WHERE  `uid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number+1.000000  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] INSERT INTO `s_mrecord` (`uid` , `fuid` , `number` , `bid` , `addtime` , `money` , `status` , `type` , `oid`) VALUES (1 , 1 , 1 , 1 , 1499244684 , 1 , 1 , 3 , '20170705192416') [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] UPDATE `s_deal_s`  SET `status`=1,`number_no`=0  WHERE  `id` = 344 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] UPDATE `s_user`  SET `money`=money+1.000  WHERE  `uid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number+1.000000  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] INSERT INTO `s_mrecord` (`uid` , `fuid` , `number` , `bid` , `addtime` , `money` , `status` , `type` , `oid`) VALUES (1 , 1 , 1 , 1 , 1499244684 , 1 , 1 , 3 , '20170705192416') [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] UPDATE `s_deal_s`  SET `status`=1,`number_no`=0  WHERE  `id` = 345 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] UPDATE `s_user`  SET `money`=money+1.000  WHERE  `uid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number+1.000000  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.015600s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] INSERT INTO `s_mrecord` (`uid` , `fuid` , `number` , `bid` , `addtime` , `money` , `status` , `type` , `oid`) VALUES (1 , 1 , 1 , 1 , 1499244684 , 1 , 1 , 3 , '20170705192416') [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] UPDATE `s_deal_s`  SET `status`=1,`number_no`=0  WHERE  `id` = 346 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] UPDATE `s_user`  SET `money`=money+1.000  WHERE  `uid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number+1.000000  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] INSERT INTO `s_mrecord` (`uid` , `fuid` , `number` , `bid` , `addtime` , `money` , `status` , `type` , `oid`) VALUES (1 , 1 , 1 , 1 , 1499244684 , 1 , 1 , 3 , '20170705192416') [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] UPDATE `s_deal_s`  SET `status`=1,`number_no`=0  WHERE  `id` = 347 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] UPDATE `s_user`  SET `money`=money+1.000  WHERE  `uid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.015600s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number+1.000000  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] INSERT INTO `s_mrecord` (`uid` , `fuid` , `number` , `bid` , `addtime` , `money` , `status` , `type` , `oid`) VALUES (1 , 1 , 1 , 1 , 1499244684 , 1 , 1 , 3 , '20170705192416') [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] UPDATE `s_deal_s`  SET `status`=1,`number_no`=0  WHERE  `id` = 348 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] UPDATE `s_user`  SET `money`=money+1.000  WHERE  `uid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number+1.000000  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] INSERT INTO `s_mrecord` (`uid` , `fuid` , `number` , `bid` , `addtime` , `money` , `status` , `type` , `oid`) VALUES (1 , 1 , 1 , 1 , 1499244684 , 1 , 1 , 3 , '20170705192416') [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] UPDATE `s_deal_s`  SET `status`=1,`number_no`=0  WHERE  `id` = 349 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] UPDATE `s_user`  SET `money`=money+1.000  WHERE  `uid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number+1.000000  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] INSERT INTO `s_mrecord` (`uid` , `fuid` , `number` , `bid` , `addtime` , `money` , `status` , `type` , `oid`) VALUES (1 , 1 , 1 , 1 , 1499244684 , 1 , 1 , 3 , '20170705192416') [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] UPDATE `s_deal_s`  SET `status`=1,`number_no`=0  WHERE  `id` = 350 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] UPDATE `s_user`  SET `money`=money+1.000  WHERE  `uid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.015600s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number+1.000000  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] INSERT INTO `s_mrecord` (`uid` , `fuid` , `number` , `bid` , `addtime` , `money` , `status` , `type` , `oid`) VALUES (1 , 1 , 1 , 1 , 1499244684 , 1 , 1 , 3 , '20170705192416') [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] UPDATE `s_deal_s`  SET `status`=1,`number_no`=0  WHERE  `id` = 351 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] UPDATE `s_user`  SET `money`=money+1.000  WHERE  `uid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number+1.000000  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] INSERT INTO `s_mrecord` (`uid` , `fuid` , `number` , `bid` , `addtime` , `money` , `status` , `type` , `oid`) VALUES (1 , 1 , 1 , 1 , 1499244684 , 1 , 1 , 3 , '20170705192416') [ RunTime:0.000000s ]
+[ 2017-07-05T16:51:24+08:00 ][ sql ] [ SQL ] UPDATE `s_deal_b`  SET `status`=0,`number_no`=5  WHERE  `id` = 711 [ RunTime:0.000000s ]
+[ 2017-07-05T16:52:06+08:00 ][ sql ] [ SQL ] SELECT `money` FROM `s_user` WHERE  `uid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:52:06+08:00 ][ sql ] [ SQL ] INSERT INTO `s_deal_b` (`bid` , `number` , `number_no` , `addtime` , `uid` , `price`) VALUES (1 , 1 , 1 , 1499244726 , 1 , 20) [ RunTime:0.000000s ]
+[ 2017-07-05T16:52:06+08:00 ][ sql ] [ SQL ] UPDATE `s_user`  SET `money`=money-20  WHERE  `uid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:52:06+08:00 ][ sql ] [ SQL ] SELECT `id`,`bid`,`price`,`number_no`,`number`,`uid` FROM `s_deal_s` WHERE  `bid` = 1  AND `status` = 0  AND `price` = 20.00 ORDER BY addtime asc [ RunTime:0.000000s ]
+[ 2017-07-05T16:52:07+08:00 ][ sql ] [ SQL ] SELECT `money` FROM `s_user` WHERE  `uid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:52:07+08:00 ][ sql ] [ SQL ] INSERT INTO `s_deal_b` (`bid` , `number` , `number_no` , `addtime` , `uid` , `price`) VALUES (1 , 1 , 1 , 1499244727 , 1 , 20) [ RunTime:0.000000s ]
+[ 2017-07-05T16:52:07+08:00 ][ sql ] [ SQL ] UPDATE `s_user`  SET `money`=money-20  WHERE  `uid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:52:07+08:00 ][ sql ] [ SQL ] SELECT `id`,`bid`,`price`,`number_no`,`number`,`uid` FROM `s_deal_s` WHERE  `bid` = 1  AND `status` = 0  AND `price` = 20.00 ORDER BY addtime asc [ RunTime:0.000000s ]
+[ 2017-07-05T16:52:11+08:00 ][ sql ] [ SQL ] SELECT `number` FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:52:11+08:00 ][ sql ] [ SQL ] INSERT INTO `s_deal_s` (`bid` , `number` , `number_no` , `addtime` , `uid` , `price`) VALUES (1 , 20 , 20 , 1499244731 , 1 , 20) [ RunTime:0.000000s ]
+[ 2017-07-05T16:52:11+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number-20  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:52:11+08:00 ][ sql ] [ SQL ] SELECT `id`,`bid`,`price`,`number_no`,`number`,`uid` FROM `s_deal_b` WHERE  `bid` = 1  AND `status` = 0  AND `price` = 20.00 ORDER BY addtime asc [ RunTime:0.000000s ]
+[ 2017-07-05T16:52:11+08:00 ][ sql ] [ SQL ] UPDATE `s_deal_b`  SET `status`=1,`number_no`=0  WHERE  `id` = 712 [ RunTime:0.000000s ]
+[ 2017-07-05T16:52:11+08:00 ][ sql ] [ SQL ] UPDATE `s_user`  SET `money`=money+20.000  WHERE  `uid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:52:11+08:00 ][ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:52:11+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number+1.000000  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:52:11+08:00 ][ sql ] [ SQL ] INSERT INTO `s_mrecord` (`uid` , `fuid` , `number` , `bid` , `addtime` , `money` , `status` , `type` , `oid`) VALUES (1 , 1 , 1 , 1 , 1499244731 , 20 , 1 , 4 , '20170705185767') [ RunTime:0.000000s ]
+[ 2017-07-05T16:52:11+08:00 ][ sql ] [ SQL ] UPDATE `s_deal_b`  SET `status`=1,`number_no`=0  WHERE  `id` = 713 [ RunTime:0.001000s ]
+[ 2017-07-05T16:52:11+08:00 ][ sql ] [ SQL ] UPDATE `s_user`  SET `money`=money+20.000  WHERE  `uid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:52:11+08:00 ][ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ 2017-07-05T16:52:11+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number+1.000000  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:52:11+08:00 ][ sql ] [ SQL ] INSERT INTO `s_mrecord` (`uid` , `fuid` , `number` , `bid` , `addtime` , `money` , `status` , `type` , `oid`) VALUES (1 , 1 , 1 , 1 , 1499244731 , 20 , 1 , 4 , '20170705185767') [ RunTime:0.001000s ]
+[ 2017-07-05T16:52:11+08:00 ][ sql ] [ SQL ] UPDATE `s_deal_s`  SET `status`=0,`number_no`=18  WHERE  `id` = 352 [ RunTime:0.001000s ]
+[ 2017-07-05T16:54:52+08:00 ][ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+[ 2017-07-05T16:54:52+08:00 ][ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ 2017-07-05T16:54:52+08:00 ][ info ] [ BIND ] 'socket'
+[ 2017-07-05T16:54:52+08:00 ][ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'socket',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ 2017-07-05T16:54:52+08:00 ][ info ] [ HEADER ] array (
+)
+[ 2017-07-05T16:54:52+08:00 ][ info ] [ PARAM ] array (
+)
+[ 2017-07-05T16:54:52+08:00 ][ info ] [ DB ] INIT mysql
+[ 2017-07-05T16:54:52+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:dbname=sdb;host=localhost;port=3306;charset=utf8
+[ 2017-07-05T16:54:52+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `s_system` [ RunTime:0.000000s ]
+[ 2017-07-05T16:54:52+08:00 ][ sql ] [ SQL ] SELECT * FROM `s_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:54:52+08:00 ][ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ 2017-07-05T16:54:52+08:00 ][ info ] [ RUN ] app\socket\controller\Index->index[ D:\wamp64\www\sdb\application\socket\controller\Index.php ]
+[ 2017-07-05T16:54:57+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `s_user` [ RunTime:0.000000s ]
+[ 2017-07-05T16:54:57+08:00 ][ sql ] [ SQL ] SELECT `money` FROM `s_user` WHERE  `uid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:54:57+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `s_deal_b` [ RunTime:0.000000s ]
+[ 2017-07-05T16:54:57+08:00 ][ sql ] [ SQL ] INSERT INTO `s_deal_b` (`bid` , `number` , `number_no` , `addtime` , `uid` , `price`) VALUES (1 , 20 , 20 , 1499244897 , 1 , 2) [ RunTime:0.000000s ]
+[ 2017-07-05T16:54:57+08:00 ][ info ] [ CACHE ] INIT File
+[ 2017-07-05T16:54:57+08:00 ][ sql ] [ SQL ] UPDATE `s_user`  SET `money`=money-40  WHERE  `uid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:54:57+08:00 ][ sql ] [ SQL ] SELECT `id`,`bid`,`price`,`number_no`,`number`,`uid` FROM `s_deal_s` WHERE  `bid` = 1  AND `status` = 0  AND `price` = 2.00 ORDER BY addtime asc [ RunTime:0.000000s ]
+[ 2017-07-05T16:54:57+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `s_deal_s` [ RunTime:0.000000s ]
+[ 2017-07-05T16:54:57+08:00 ][ sql ] [ SQL ] UPDATE `s_deal_s`  SET `status`=1,`number_no`=0  WHERE  `id` = 335 [ RunTime:0.000000s ]
+[ 2017-07-05T16:54:57+08:00 ][ sql ] [ SQL ] UPDATE `s_user`  SET `money`=money+2.000  WHERE  `uid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:54:57+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `s_u-b` [ RunTime:0.015600s ]
+[ 2017-07-05T16:54:57+08:00 ][ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ 2017-07-05T16:54:57+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number+1.000000  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:54:57+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `s_mrecord` [ RunTime:0.001000s ]
+[ 2017-07-05T16:54:57+08:00 ][ sql ] [ SQL ] INSERT INTO `s_mrecord` (`uid` , `fuid` , `number` , `bid` , `addtime` , `money` , `status` , `type` , `oid`) VALUES (1 , 1 , 1 , 1 , 1499244897 , 2 , 1 , 3 , '20170705110744') [ RunTime:0.001000s ]
+[ 2017-07-05T16:54:57+08:00 ][ sql ] [ SQL ] UPDATE `s_deal_b`  SET `status`=0,`number_no`=19  WHERE  `id` = 714 [ RunTime:0.001000s ]
+[ 2017-07-05T16:55:41+08:00 ][ sql ] [ SQL ] SELECT `money` FROM `s_user` WHERE  `uid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:55:41+08:00 ][ sql ] [ SQL ] INSERT INTO `s_deal_b` (`bid` , `number` , `number_no` , `addtime` , `uid` , `price`) VALUES (1 , 2 , 2 , 1499244941 , 1 , 4) [ RunTime:0.000000s ]
+[ 2017-07-05T16:55:41+08:00 ][ sql ] [ SQL ] UPDATE `s_user`  SET `money`=money-8  WHERE  `uid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:55:41+08:00 ][ sql ] [ SQL ] SELECT `id`,`bid`,`price`,`number_no`,`number`,`uid` FROM `s_deal_s` WHERE  `bid` = 1  AND `status` = 0  AND `price` = 4.00 ORDER BY addtime asc [ RunTime:0.000000s ]
+[ 2017-07-05T16:55:41+08:00 ][ sql ] [ SQL ] UPDATE `s_deal_b`  SET `status`=1,`number_no`=0  WHERE  `id` = 715 [ RunTime:0.000000s ]
+[ 2017-07-05T16:55:41+08:00 ][ sql ] [ SQL ] UPDATE `s_user`  SET `money`=money+8.00  WHERE  `uid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:55:41+08:00 ][ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:55:41+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number+2  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:55:41+08:00 ][ sql ] [ SQL ] UPDATE `s_deal_s`  SET `status`=0,`number_no`=15  WHERE  `id` = 336 [ RunTime:0.000000s ]
+[ 2017-07-05T16:55:41+08:00 ][ sql ] [ SQL ] INSERT INTO `s_mrecord` (`uid` , `fuid` , `number` , `bid` , `addtime` , `money` , `status` , `type` , `oid`) VALUES (1 , 1 , 2 , 1 , 1499244941 , 4 , 1 , 3 , '20170705147694') [ RunTime:0.000000s ]
+[ 2017-07-05T16:55:44+08:00 ][ sql ] [ SQL ] SELECT `money` FROM `s_user` WHERE  `uid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:55:44+08:00 ][ sql ] [ SQL ] INSERT INTO `s_deal_b` (`bid` , `number` , `number_no` , `addtime` , `uid` , `price`) VALUES (1 , 40 , 40 , 1499244944 , 1 , 4) [ RunTime:0.000000s ]
+[ 2017-07-05T16:55:44+08:00 ][ sql ] [ SQL ] UPDATE `s_user`  SET `money`=money-160  WHERE  `uid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:55:44+08:00 ][ sql ] [ SQL ] SELECT `id`,`bid`,`price`,`number_no`,`number`,`uid` FROM `s_deal_s` WHERE  `bid` = 1  AND `status` = 0  AND `price` = 4.00 ORDER BY addtime asc [ RunTime:0.000000s ]
+[ 2017-07-05T16:55:44+08:00 ][ sql ] [ SQL ] UPDATE `s_deal_s`  SET `status`=1,`number_no`=0  WHERE  `id` = 336 [ RunTime:0.000000s ]
+[ 2017-07-05T16:55:44+08:00 ][ sql ] [ SQL ] UPDATE `s_user`  SET `money`=money+60.000  WHERE  `uid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:55:44+08:00 ][ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:55:44+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number+15.000000  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:55:44+08:00 ][ sql ] [ SQL ] INSERT INTO `s_mrecord` (`uid` , `fuid` , `number` , `bid` , `addtime` , `money` , `status` , `type` , `oid`) VALUES (1 , 1 , 15 , 1 , 1499244944 , 4 , 1 , 3 , '20170705118187') [ RunTime:0.000000s ]
+[ 2017-07-05T16:55:44+08:00 ][ sql ] [ SQL ] UPDATE `s_deal_s`  SET `status`=1,`number_no`=0  WHERE  `id` = 337 [ RunTime:0.000000s ]
+[ 2017-07-05T16:55:44+08:00 ][ sql ] [ SQL ] UPDATE `s_user`  SET `money`=money+80.000  WHERE  `uid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:55:44+08:00 ][ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:55:44+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number+20.000000  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:55:44+08:00 ][ sql ] [ SQL ] INSERT INTO `s_mrecord` (`uid` , `fuid` , `number` , `bid` , `addtime` , `money` , `status` , `type` , `oid`) VALUES (1 , 1 , 20 , 1 , 1499244944 , 4 , 1 , 3 , '20170705118187') [ RunTime:0.000000s ]
+[ 2017-07-05T16:55:44+08:00 ][ sql ] [ SQL ] UPDATE `s_deal_b`  SET `status`=0,`number_no`=5  WHERE  `id` = 716 [ RunTime:0.000000s ]
+[ 2017-07-05T16:58:25+08:00 ][ sql ] [ SQL ] SELECT `number` FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:58:25+08:00 ][ sql ] [ SQL ] INSERT INTO `s_deal_s` (`bid` , `number` , `number_no` , `addtime` , `uid` , `price`) VALUES (1 , 1 , 1 , 1499245105 , 1 , 1) [ RunTime:0.000000s ]
+[ 2017-07-05T16:58:25+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number-1  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:58:25+08:00 ][ sql ] [ SQL ] SELECT `id`,`bid`,`price`,`number_no`,`number`,`uid` FROM `s_deal_b` WHERE  `bid` = 1  AND `status` = 0  AND `price` = 1.00 ORDER BY addtime asc [ RunTime:0.000000s ]
+[ 2017-07-05T16:58:25+08:00 ][ sql ] [ SQL ] UPDATE `s_deal_s`  SET `status`=1,`number_no`=0  WHERE  `id` = 353 [ RunTime:0.000000s ]
+[ 2017-07-05T16:58:25+08:00 ][ sql ] [ SQL ] UPDATE `s_user`  SET `money`=money+1.00  WHERE  `uid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:58:25+08:00 ][ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:58:25+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number+1  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:58:25+08:00 ][ sql ] [ SQL ] UPDATE `s_deal_b`  SET `status`=0,`number_no`=4  WHERE  `id` = 711 [ RunTime:0.000000s ]
+[ 2017-07-05T16:58:25+08:00 ][ sql ] [ SQL ] INSERT INTO `s_mrecord` (`uid` , `fuid` , `number` , `bid` , `addtime` , `money` , `status` , `type` , `oid`) VALUES (1 , 1 , 1 , 1 , 1499245105 , 1 , 1 , 4 , '20170705185569') [ RunTime:0.000000s ]
+[ 2017-07-05T16:58:30+08:00 ][ sql ] [ SQL ] SELECT `number` FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:58:30+08:00 ][ sql ] [ SQL ] INSERT INTO `s_deal_s` (`bid` , `number` , `number_no` , `addtime` , `uid` , `price`) VALUES (1 , 1 , 1 , 1499245110 , 1 , 3) [ RunTime:0.000000s ]
+[ 2017-07-05T16:58:30+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number-1  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:58:30+08:00 ][ sql ] [ SQL ] SELECT `id`,`bid`,`price`,`number_no`,`number`,`uid` FROM `s_deal_b` WHERE  `bid` = 1  AND `status` = 0  AND `price` = 3.00 ORDER BY addtime asc [ RunTime:0.000000s ]
+[ 2017-07-05T16:58:31+08:00 ][ sql ] [ SQL ] SELECT `number` FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:58:31+08:00 ][ sql ] [ SQL ] INSERT INTO `s_deal_s` (`bid` , `number` , `number_no` , `addtime` , `uid` , `price`) VALUES (1 , 1 , 1 , 1499245111 , 1 , 3) [ RunTime:0.000000s ]
+[ 2017-07-05T16:58:31+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number-1  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:58:31+08:00 ][ sql ] [ SQL ] SELECT `id`,`bid`,`price`,`number_no`,`number`,`uid` FROM `s_deal_b` WHERE  `bid` = 1  AND `status` = 0  AND `price` = 3.00 ORDER BY addtime asc [ RunTime:0.000000s ]
+[ 2017-07-05T16:58:44+08:00 ][ sql ] [ SQL ] SELECT `number` FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.015600s ]
+[ 2017-07-05T16:58:44+08:00 ][ sql ] [ SQL ] INSERT INTO `s_deal_s` (`bid` , `number` , `number_no` , `addtime` , `uid` , `price`) VALUES (1 , 5 , 5 , 1499245124 , 1 , 1) [ RunTime:0.000000s ]
+[ 2017-07-05T16:58:44+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number-5  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:58:44+08:00 ][ sql ] [ SQL ] SELECT `id`,`bid`,`price`,`number_no`,`number`,`uid` FROM `s_deal_b` WHERE  `bid` = 1  AND `status` = 0  AND `price` = 1.00 ORDER BY addtime asc [ RunTime:0.000000s ]
+[ 2017-07-05T16:58:44+08:00 ][ sql ] [ SQL ] UPDATE `s_deal_b`  SET `status`=1,`number_no`=0  WHERE  `id` = 711 [ RunTime:0.000000s ]
+[ 2017-07-05T16:58:44+08:00 ][ sql ] [ SQL ] UPDATE `s_user`  SET `money`=money+4.000  WHERE  `uid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:58:44+08:00 ][ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:58:44+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number+4.000000  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:58:44+08:00 ][ sql ] [ SQL ] INSERT INTO `s_mrecord` (`uid` , `fuid` , `number` , `bid` , `addtime` , `money` , `status` , `type` , `oid`) VALUES (1 , 1 , 4 , 1 , 1499245124 , 1 , 1 , 4 , '20170705152981') [ RunTime:0.000000s ]
+[ 2017-07-05T16:58:44+08:00 ][ sql ] [ SQL ] UPDATE `s_deal_s`  SET `status`=0,`number_no`=1  WHERE  `id` = 356 [ RunTime:0.005000s ]
+[ 2017-07-05T16:58:52+08:00 ][ sql ] [ SQL ] SELECT `money` FROM `s_user` WHERE  `uid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:58:52+08:00 ][ sql ] [ SQL ] INSERT INTO `s_deal_b` (`bid` , `number` , `number_no` , `addtime` , `uid` , `price`) VALUES (1 , 3 , 3 , 1499245132 , 1 , 3) [ RunTime:0.000000s ]
+[ 2017-07-05T16:58:52+08:00 ][ sql ] [ SQL ] UPDATE `s_user`  SET `money`=money-9  WHERE  `uid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:58:52+08:00 ][ sql ] [ SQL ] SELECT `id`,`bid`,`price`,`number_no`,`number`,`uid` FROM `s_deal_s` WHERE  `bid` = 1  AND `status` = 0  AND `price` = 3.00 ORDER BY addtime asc [ RunTime:0.000000s ]
+[ 2017-07-05T16:58:52+08:00 ][ sql ] [ SQL ] UPDATE `s_deal_s`  SET `status`=1,`number_no`=0  WHERE  `id` = 354 [ RunTime:0.000000s ]
+[ 2017-07-05T16:58:52+08:00 ][ sql ] [ SQL ] UPDATE `s_user`  SET `money`=money+3.000  WHERE  `uid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:58:52+08:00 ][ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:58:52+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number+1.000000  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:58:52+08:00 ][ sql ] [ SQL ] INSERT INTO `s_mrecord` (`uid` , `fuid` , `number` , `bid` , `addtime` , `money` , `status` , `type` , `oid`) VALUES (1 , 1 , 1 , 1 , 1499245132 , 3 , 1 , 3 , '20170705158707') [ RunTime:0.000000s ]
+[ 2017-07-05T16:58:52+08:00 ][ sql ] [ SQL ] UPDATE `s_deal_s`  SET `status`=1,`number_no`=0  WHERE  `id` = 355 [ RunTime:0.000000s ]
+[ 2017-07-05T16:58:52+08:00 ][ sql ] [ SQL ] UPDATE `s_user`  SET `money`=money+3.000  WHERE  `uid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:58:52+08:00 ][ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:58:52+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number+1.000000  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:58:52+08:00 ][ sql ] [ SQL ] INSERT INTO `s_mrecord` (`uid` , `fuid` , `number` , `bid` , `addtime` , `money` , `status` , `type` , `oid`) VALUES (1 , 1 , 1 , 1 , 1499245132 , 3 , 1 , 3 , '20170705158707') [ RunTime:0.000000s ]
+[ 2017-07-05T16:58:52+08:00 ][ sql ] [ SQL ] UPDATE `s_deal_b`  SET `status`=0,`number_no`=1  WHERE  `id` = 717 [ RunTime:0.000000s ]
+[ 2017-07-05T16:59:40+08:00 ][ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+[ 2017-07-05T16:59:40+08:00 ][ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ 2017-07-05T16:59:40+08:00 ][ info ] [ BIND ] 'socket'
+[ 2017-07-05T16:59:40+08:00 ][ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'socket',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ 2017-07-05T16:59:40+08:00 ][ info ] [ HEADER ] array (
+)
+[ 2017-07-05T16:59:40+08:00 ][ info ] [ PARAM ] array (
+)
+[ 2017-07-05T16:59:40+08:00 ][ info ] [ DB ] INIT mysql
+[ 2017-07-05T16:59:40+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=sdb;host=localhost;port=3306;charset=utf8
+[ 2017-07-05T16:59:40+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `s_system` [ RunTime:0.015600s ]
+[ 2017-07-05T16:59:40+08:00 ][ sql ] [ SQL ] SELECT * FROM `s_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:59:40+08:00 ][ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ 2017-07-05T16:59:40+08:00 ][ info ] [ RUN ] app\socket\controller\Index->index[ D:\wamp64\www\sdb\application\socket\controller\Index.php ]
+[ 2017-07-05T16:59:52+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `s_user` [ RunTime:0.000000s ]
+[ 2017-07-05T16:59:52+08:00 ][ sql ] [ SQL ] SELECT `money` FROM `s_user` WHERE  `uid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:59:52+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `s_deal_b` [ RunTime:0.000000s ]
+[ 2017-07-05T16:59:52+08:00 ][ sql ] [ SQL ] INSERT INTO `s_deal_b` (`bid` , `number` , `number_no` , `addtime` , `uid` , `price`) VALUES (1 , 2 , 2 , 1499245192 , 1 , 1) [ RunTime:0.000000s ]
+[ 2017-07-05T16:59:52+08:00 ][ info ] [ CACHE ] INIT File
+[ 2017-07-05T16:59:52+08:00 ][ sql ] [ SQL ] UPDATE `s_user`  SET `money`=money-2  WHERE  `uid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:59:52+08:00 ][ sql ] [ SQL ] SELECT `id`,`bid`,`price`,`number_no`,`number`,`uid` FROM `s_deal_s` WHERE  `bid` = 1  AND `status` = 0  AND `price` = 1.00 ORDER BY addtime asc [ RunTime:0.000000s ]
+[ 2017-07-05T16:59:52+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `s_deal_s` [ RunTime:0.000000s ]
+[ 2017-07-05T16:59:52+08:00 ][ sql ] [ SQL ] UPDATE `s_deal_s`  SET `status`=1,`number_no`=0  WHERE  `id` = 356 [ RunTime:0.000000s ]
+[ 2017-07-05T16:59:52+08:00 ][ sql ] [ SQL ] UPDATE `s_user`  SET `money`=money+1.000  WHERE  `uid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:59:52+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `s_u-b` [ RunTime:0.000000s ]
+[ 2017-07-05T16:59:52+08:00 ][ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `s_u-b` WHERE  `uid` = 1  AND `bid` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:59:52+08:00 ][ sql ] [ SQL ] UPDATE `s_u-b`  SET `number`=number+1.000000  WHERE  `uid` = 1  AND `bid` = 1 [ RunTime:0.000000s ]
+[ 2017-07-05T16:59:52+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `s_mrecord` [ RunTime:0.000000s ]
+[ 2017-07-05T16:59:52+08:00 ][ sql ] [ SQL ] INSERT INTO `s_mrecord` (`uid` , `fuid` , `number` , `bid` , `addtime` , `money` , `status` , `type` , `oid`) VALUES (1 , 1 , 1 , 1 , 1499245192 , 1 , 1 , 3 , '20170705183072') [ RunTime:0.000000s ]
+[ 2017-07-05T16:59:52+08:00 ][ sql ] [ SQL ] UPDATE `s_deal_b`  SET `status`=0,`number_no`=1  WHERE  `id` = 718 [ RunTime:0.000000s ]
