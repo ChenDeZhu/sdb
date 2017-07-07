@@ -1,0 +1,1806 @@
+---------------------------------------------------------------
+[ 2017-07-06T15:06:05+08:00 ] 127.0.0.1 127.0.0.1 GET /account/record.html
+[ info ] www.sdb.com/account/record.html [运行时间：0.094601s][吞吐率：10.57req/s] [内存消耗：3,321.23kb] [文件加载：52]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'account',
+    2 => 'record',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3176.400 QQBrowser/9.6.11521.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/account/withdrawcny.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=87v6nllkumd50ci2g68f4d40g3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Account->record[ D:\wamp64\www\sdb\application\index\controller\Account.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:dbname=sdb;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_system` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `s_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_mrecord` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `s_mrecord` WHERE  `bid` = 0  AND `uid` = 1  AND `type` = 3 GROUP BY oid [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-07-06T15:07:19+08:00 ] 127.0.0.1 127.0.0.1 GET /account/record.html
+[ info ] www.sdb.com/account/record.html [运行时间：0.043201s][吞吐率：23.15req/s] [内存消耗：3,322.25kb] [文件加载：52]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'account',
+    2 => 'record',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3176.400 QQBrowser/9.6.11521.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/account/withdrawcny.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=87v6nllkumd50ci2g68f4d40g3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Account->record[ D:\wamp64\www\sdb\application\index\controller\Account.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:dbname=sdb;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_system` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `s_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_mrecord` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `s_mrecord` WHERE  `uid` = 1  AND `type` = 3 GROUP BY oid [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-07-06T15:09:22+08:00 ] 127.0.0.1 127.0.0.1 GET /account/record.html
+[ info ] www.sdb.com/account/record.html [运行时间：0.094601s][吞吐率：10.57req/s] [内存消耗：3,353.50kb] [文件加载：58]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'account',
+    2 => 'record',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3176.400 QQBrowser/9.6.11521.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/account/withdrawcny.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=87v6nllkumd50ci2g68f4d40g3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Account->record[ D:\wamp64\www\sdb\application\index\controller\Account.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:dbname=sdb;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_system` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `s_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_mrecord` [ RunTime:0.000000s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'price' in 'field list'[D:\wamp64\www\sdb\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-07-06T15:09:27+08:00 ] 127.0.0.1 127.0.0.1 GET /account/record.html
+[ info ] www.sdb.com/account/record.html [运行时间：0.079000s][吞吐率：12.66req/s] [内存消耗：3,353.50kb] [文件加载：58]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'account',
+    2 => 'record',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3176.400 QQBrowser/9.6.11521.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/account/withdrawcny.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=87v6nllkumd50ci2g68f4d40g3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Account->record[ D:\wamp64\www\sdb\application\index\controller\Account.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:dbname=sdb;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_system` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `s_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_mrecord` [ RunTime:0.000000s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'moeny' in 'field list'[D:\wamp64\www\sdb\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-07-06T15:09:31+08:00 ] 127.0.0.1 127.0.0.1 GET /account/record.html
+[ info ] www.sdb.com/account/record.html [运行时间：0.062400s][吞吐率：16.03req/s] [内存消耗：3,318.21kb] [文件加载：52]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'account',
+    2 => 'record',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3176.400 QQBrowser/9.6.11521.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/account/withdrawcny.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=87v6nllkumd50ci2g68f4d40g3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Account->record[ D:\wamp64\www\sdb\application\index\controller\Account.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:dbname=sdb;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_system` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `s_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_mrecord` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `addtime`,`type`,`number`,`money`,`poundage` FROM `s_mrecord` WHERE  `uid` = 1  AND `type` = 3 GROUP BY oid [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-07-06T15:09:44+08:00 ] 127.0.0.1 127.0.0.1 GET /account/record.html
+[ info ] www.sdb.com/account/record.html [运行时间：0.047801s][吞吐率：20.92req/s] [内存消耗：3,318.55kb] [文件加载：52]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'account',
+    2 => 'record',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3176.400 QQBrowser/9.6.11521.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/account/withdrawcny.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=87v6nllkumd50ci2g68f4d40g3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Account->record[ D:\wamp64\www\sdb\application\index\controller\Account.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:dbname=sdb;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_system` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `s_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_mrecord` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `addtime`,`type`,sum(number),`money`,`poundage` FROM `s_mrecord` WHERE  `uid` = 1  AND `type` = 3 GROUP BY oid [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-07-06T15:09:57+08:00 ] 127.0.0.1 127.0.0.1 GET /account/record.html
+[ info ] www.sdb.com/account/record.html [运行时间：0.063400s][吞吐率：15.77req/s] [内存消耗：3,318.35kb] [文件加载：52]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'account',
+    2 => 'record',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3176.400 QQBrowser/9.6.11521.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/account/withdrawcny.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=87v6nllkumd50ci2g68f4d40g3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Account->record[ D:\wamp64\www\sdb\application\index\controller\Account.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:dbname=sdb;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_system` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `s_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_mrecord` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `addtime`,`type`,sum(number) as number,`money`,`poundage` FROM `s_mrecord` WHERE  `uid` = 1  AND `type` = 3 GROUP BY oid [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-07-06T15:10:28+08:00 ] 127.0.0.1 127.0.0.1 GET /account/record.html
+[ info ] www.sdb.com/account/record.html [运行时间：0.065400s][吞吐率：15.29req/s] [内存消耗：3,319.18kb] [文件加载：52]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'account',
+    2 => 'record',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3176.400 QQBrowser/9.6.11521.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/account/withdrawcny.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=87v6nllkumd50ci2g68f4d40g3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Account->record[ D:\wamp64\www\sdb\application\index\controller\Account.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:dbname=sdb;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_system` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `s_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_mrecord` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`addtime`,`type`,sum(number) as number,`money`,`poundage` FROM `s_mrecord` WHERE  `uid` = 1  AND `type` = 3 GROUP BY oid [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-07-06T15:16:03+08:00 ] 127.0.0.1 127.0.0.1 GET /account/record.html
+[ info ] www.sdb.com/account/record.html [运行时间：0.055800s][吞吐率：17.92req/s] [内存消耗：3,324.47kb] [文件加载：52]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'account',
+    2 => 'record',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3176.400 QQBrowser/9.6.11521.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/account/withdrawcny.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=87v6nllkumd50ci2g68f4d40g3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Account->record[ D:\wamp64\www\sdb\application\index\controller\Account.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:dbname=sdb;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_system` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `s_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_mrecord` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`addtime`,`type`,sum(number) as number,`money`,`poundage` FROM `s_mrecord` WHERE  `uid` = 1  AND `type` = 3 GROUP BY oid [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`addtime`,`type`,sum(number) as number,`money`,`poundage` FROM `s_mrecord` WHERE  `uid` = 1  AND `type` = 4 GROUP BY oid [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-07-06T15:17:06+08:00 ] 127.0.0.1 127.0.0.1 GET /account/record.html
+[ info ] www.sdb.com/account/record.html [运行时间：0.047800s][吞吐率：20.92req/s] [内存消耗：3,326.12kb] [文件加载：52]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'account',
+    2 => 'record',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3176.400 QQBrowser/9.6.11521.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/account/withdrawcny.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=87v6nllkumd50ci2g68f4d40g3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Account->record[ D:\wamp64\www\sdb\application\index\controller\Account.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:dbname=sdb;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_system` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `s_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_mrecord` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`addtime`,`type`,sum(number) as number,`money`,`poundage` FROM `s_mrecord` WHERE  `uid` = 1  AND `type` = 3 GROUP BY oid [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`addtime`,`type`,sum(number) as number,`money`,`poundage` FROM `s_mrecord` WHERE  `uid` = 1  AND `type` = 3 GROUP BY oid [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-07-06T15:20:28+08:00 ] 127.0.0.1 127.0.0.1 GET /account/record.html
+[ info ] www.sdb.com/account/record.html [运行时间：0.063400s][吞吐率：15.77req/s] [内存消耗：3,313.48kb] [文件加载：52]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'account',
+    2 => 'record',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3176.400 QQBrowser/9.6.11521.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/account/withdrawcny.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=87v6nllkumd50ci2g68f4d40g3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Account->record[ D:\wamp64\www\sdb\application\index\controller\Account.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:dbname=sdb;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_system` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `s_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_mrecord` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`addtime`,`type`,sum(number) FROM `s_mrecord` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-07-06T15:24:44+08:00 ] 127.0.0.1 127.0.0.1 GET /account/record.html
+[ info ] www.sdb.com/account/record.html [运行时间：0.048800s][吞吐率：20.49req/s] [内存消耗：3,316.19kb] [文件加载：52]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'account',
+    2 => 'record',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3176.400 QQBrowser/9.6.11521.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/account/withdrawcny.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=87v6nllkumd50ci2g68f4d40g3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Account->record[ D:\wamp64\www\sdb\application\index\controller\Account.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:dbname=sdb;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_system` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `s_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_mrecord` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`addtime`,`type`,`number` FROM `s_mrecord` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-07-06T15:27:21+08:00 ] 127.0.0.1 127.0.0.1 GET /account/record.html
+[ info ] www.sdb.com/account/record.html [运行时间：0.047800s][吞吐率：20.92req/s] [内存消耗：3,353.91kb] [文件加载：58]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'account',
+    2 => 'record',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3176.400 QQBrowser/9.6.11521.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/account/withdrawcny.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=87v6nllkumd50ci2g68f4d40g3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Account->record[ D:\wamp64\www\sdb\application\index\controller\Account.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:dbname=sdb;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_system` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `s_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_mrecord` [ RunTime:0.000000s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sdb.mrecord' doesn't exist[D:\wamp64\www\sdb\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-07-06T15:27:31+08:00 ] 127.0.0.1 127.0.0.1 GET /account/record.html
+[ info ] www.sdb.com/account/record.html [运行时间：0.047800s][吞吐率：20.92req/s] [内存消耗：3,319.14kb] [文件加载：52]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'account',
+    2 => 'record',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3176.400 QQBrowser/9.6.11521.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/account/withdrawcny.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=87v6nllkumd50ci2g68f4d40g3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Account->record[ D:\wamp64\www\sdb\application\index\controller\Account.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:dbname=sdb;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_system` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `s_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_mrecord` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`addtime`,`type`,`number` FROM `s_mrecord` WHERE  `uid` = 1  AND `type` = 3 GROUP BY oid UNION select id,addtime,type,number from s_mrecord where bid=1 and type=4 group by oid [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-07-06T15:27:46+08:00 ] 127.0.0.1 127.0.0.1 GET /account/record.html
+[ info ] www.sdb.com/account/record.html [运行时间：0.063400s][吞吐率：15.77req/s] [内存消耗：3,317.27kb] [文件加载：52]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'account',
+    2 => 'record',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3176.400 QQBrowser/9.6.11521.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/account/withdrawcny.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=87v6nllkumd50ci2g68f4d40g3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Account->record[ D:\wamp64\www\sdb\application\index\controller\Account.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:dbname=sdb;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_system` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `s_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_mrecord` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`addtime`,`type`,`number` FROM `s_mrecord` WHERE  `uid` = 1  AND `type` = 3 GROUP BY oid [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-07-06T15:28:17+08:00 ] 127.0.0.1 127.0.0.1 GET /account/record.html
+[ info ] www.sdb.com/account/record.html [运行时间：0.047800s][吞吐率：20.92req/s] [内存消耗：3,318.51kb] [文件加载：52]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'account',
+    2 => 'record',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3176.400 QQBrowser/9.6.11521.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/account/withdrawcny.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=87v6nllkumd50ci2g68f4d40g3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Account->record[ D:\wamp64\www\sdb\application\index\controller\Account.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=sdb;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_system` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `s_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_mrecord` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`addtime`,`type`,`number` FROM `s_mrecord` WHERE  `uid` = 1  AND `type` = 3 GROUP BY oid UNION select id,addtime,type,number from s_mrecord where uid = 2 and type=4 group by oid [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-07-06T15:28:36+08:00 ] 127.0.0.1 127.0.0.1 GET /account/record.html
+[ info ] www.sdb.com/account/record.html [运行时间：0.079000s][吞吐率：12.66req/s] [内存消耗：3,318.51kb] [文件加载：52]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'account',
+    2 => 'record',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3176.400 QQBrowser/9.6.11521.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/account/withdrawcny.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=87v6nllkumd50ci2g68f4d40g3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Account->record[ D:\wamp64\www\sdb\application\index\controller\Account.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:dbname=sdb;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_system` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `s_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_mrecord` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`addtime`,`type`,`number` FROM `s_mrecord` WHERE  `uid` = 1  AND `type` = 3 GROUP BY oid UNION select id,addtime,type,number from s_mrecord where uid = 2 and type=4 group by oid [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-07-06T15:28:56+08:00 ] 127.0.0.1 127.0.0.1 GET /account/record.html
+[ info ] www.sdb.com/account/record.html [运行时间：0.047800s][吞吐率：20.92req/s] [内存消耗：3,318.58kb] [文件加载：52]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'account',
+    2 => 'record',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3176.400 QQBrowser/9.6.11521.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/account/withdrawcny.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=87v6nllkumd50ci2g68f4d40g3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Account->record[ D:\wamp64\www\sdb\application\index\controller\Account.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:dbname=sdb;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_system` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `s_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_mrecord` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`addtime`,`type`,`number` FROM `s_mrecord` WHERE  `uid` = 1  AND `type` = 3 GROUP BY oid UNION select id,addtime,type,number from s_mrecord where fuid = 2 and type=4 group by oid [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-07-06T15:29:25+08:00 ] 127.0.0.1 127.0.0.1 GET /account/record.html
+[ info ] www.sdb.com/account/record.html [运行时间：0.044200s][吞吐率：22.62req/s] [内存消耗：3,319.07kb] [文件加载：52]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'account',
+    2 => 'record',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3176.400 QQBrowser/9.6.11521.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/account/withdrawcny.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=87v6nllkumd50ci2g68f4d40g3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Account->record[ D:\wamp64\www\sdb\application\index\controller\Account.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:dbname=sdb;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_system` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `s_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_mrecord` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`addtime`,`type`,`number` FROM `s_mrecord` WHERE  `uid` = 1  AND `type` = 3 GROUP BY oid UNION select id,addtime,type,number from s_mrecord where fuid = 1 and type=4 group by oid [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-07-06T15:29:44+08:00 ] 127.0.0.1 127.0.0.1 GET /account/record.html
+[ info ] www.sdb.com/account/record.html [运行时间：0.065400s][吞吐率：15.29req/s] [内存消耗：3,353.95kb] [文件加载：58]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'account',
+    2 => 'record',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3176.400 QQBrowser/9.6.11521.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/account/withdrawcny.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=87v6nllkumd50ci2g68f4d40g3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Account->record[ D:\wamp64\www\sdb\application\index\controller\Account.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:dbname=sdb;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_system` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `s_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_mrecord` [ RunTime:0.000000s ]
+[ error ] [10501]SQLSTATE[HY000]: General error: 1221 Incorrect usage of UNION and ORDER BY[D:\wamp64\www\sdb\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-07-06T15:29:58+08:00 ] 127.0.0.1 127.0.0.1 GET /account/record.html
+[ info ] www.sdb.com/account/record.html [运行时间：0.047800s][吞吐率：20.92req/s] [内存消耗：3,353.95kb] [文件加载：58]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'account',
+    2 => 'record',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3176.400 QQBrowser/9.6.11521.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/account/withdrawcny.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=87v6nllkumd50ci2g68f4d40g3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Account->record[ D:\wamp64\www\sdb\application\index\controller\Account.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:dbname=sdb;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_system` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `s_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_mrecord` [ RunTime:0.000000s ]
+[ error ] [10501]SQLSTATE[HY000]: General error: 1221 Incorrect usage of UNION and ORDER BY[D:\wamp64\www\sdb\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-07-06T15:30:27+08:00 ] 127.0.0.1 127.0.0.1 GET /account/record.html
+[ info ] www.sdb.com/account/record.html [运行时间：0.032201s][吞吐率：31.05req/s] [内存消耗：3,319.28kb] [文件加载：52]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'account',
+    2 => 'record',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3176.400 QQBrowser/9.6.11521.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/account/withdrawcny.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=87v6nllkumd50ci2g68f4d40g3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Account->record[ D:\wamp64\www\sdb\application\index\controller\Account.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=sdb;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_system` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `s_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_mrecord` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`addtime`,`type`,`number` FROM `s_mrecord` WHERE  `uid` = 1  AND `type` = 3 GROUP BY oid UNION select id,addtime,type,number from s_mrecord where fuid = 1 and type=4 group by oid order by addtime desc [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-07-06T15:34:31+08:00 ] 127.0.0.1 127.0.0.1 GET /account/record.html
+[ info ] www.sdb.com/account/record.html [运行时间：0.032200s][吞吐率：31.06req/s] [内存消耗：2,010.88kb] [文件加载：41]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'account',
+    2 => 'record',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3176.400 QQBrowser/9.6.11521.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/account/withdrawcny.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=87v6nllkumd50ci2g68f4d40g3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]语法解析错误: syntax error, unexpected '' and type=4 group by oid orde' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ')'[D:\wamp64\www\sdb\application\index\controller\Account.php:37]
+---------------------------------------------------------------
+[ 2017-07-06T15:35:10+08:00 ] 127.0.0.1 127.0.0.1 GET /account/record.html
+[ info ] www.sdb.com/account/record.html [运行时间：0.063401s][吞吐率：15.77req/s] [内存消耗：3,319.23kb] [文件加载：52]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'account',
+    2 => 'record',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3176.400 QQBrowser/9.6.11521.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/account/withdrawcny.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=87v6nllkumd50ci2g68f4d40g3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Account->record[ D:\wamp64\www\sdb\application\index\controller\Account.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015601s ] mysql:dbname=sdb;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_system` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `s_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_mrecord` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`addtime`,`type`,`number` FROM `s_mrecord` WHERE  `uid` = 1  AND `type` = 3 GROUP BY oid UNION select id,addtime,type,number from s_mrecord where fuid =1 and type=4 group by oid order by addtime desc [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-07-06T15:43:20+08:00 ] 127.0.0.1 127.0.0.1 GET /account/record.html
+[ info ] www.sdb.com/account/record.html [运行时间：0.063401s][吞吐率：15.77req/s] [内存消耗：2,010.75kb] [文件加载：41]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'account',
+    2 => 'record',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3176.400 QQBrowser/9.6.11521.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/account/withdrawcny.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=87v6nllkumd50ci2g68f4d40g3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]语法解析错误: syntax error, unexpected 'union' (T_STRING)[D:\wamp64\www\sdb\application\index\controller\Account.php:36]
+---------------------------------------------------------------
+[ 2017-07-06T15:43:29+08:00 ] 127.0.0.1 127.0.0.1 GET /account/record.html
+[ info ] www.sdb.com/account/record.html [运行时间：0.079000s][吞吐率：12.66req/s] [内存消耗：3,355.30kb] [文件加载：58]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'account',
+    2 => 'record',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3176.400 QQBrowser/9.6.11521.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/account/withdrawcny.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=87v6nllkumd50ci2g68f4d40g3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Account->record[ D:\wamp64\www\sdb\application\index\controller\Account.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:dbname=sdb;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_system` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `s_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_mrecord` [ RunTime:0.000000s ]
+[ error ] [10501]SQLSTATE[HY000]: General error: 1221 Incorrect usage of UNION and ORDER BY[D:\wamp64\www\sdb\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-07-06T15:43:40+08:00 ] 127.0.0.1 127.0.0.1 GET /account/record.html
+[ info ] www.sdb.com/account/record.html [运行时间：0.063400s][吞吐率：15.77req/s] [内存消耗：3,321.64kb] [文件加载：52]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'account',
+    2 => 'record',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3176.400 QQBrowser/9.6.11521.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/account/withdrawcny.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=87v6nllkumd50ci2g68f4d40g3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Account->record[ D:\wamp64\www\sdb\application\index\controller\Account.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:dbname=sdb;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_system` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `s_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_mrecord` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`addtime`,`type`,sum(number) as number,`money` FROM `s_mrecord` WHERE  `uid` = 1  AND `type` = 3 GROUP BY oid UNION select id,addtime,type,number,money from s_mrecord where uid =1 and type<3  UNION select id,addtime,type,sum(number) as number,money from s_mrecord where fuid =1 and type=4 group by oid order by addtime desc [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-07-06T16:16:30+08:00 ] 127.0.0.1 127.0.0.1 GET /account/record.html
+[ info ] www.sdb.com/account/record.html [运行时间：0.063400s][吞吐率：15.77req/s] [内存消耗：3,322.20kb] [文件加载：52]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'account',
+    2 => 'record',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3176.400 QQBrowser/9.6.11521.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/account/withdrawcny.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=87v6nllkumd50ci2g68f4d40g3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Account->record[ D:\wamp64\www\sdb\application\index\controller\Account.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=sdb;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_system` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `s_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_mrecord` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`addtime`,`type`,sum(number) as number,`money` FROM `s_mrecord` WHERE  `uid` = 1  AND `type` = 3 GROUP BY oid UNION select id,addtime,type,number,money from s_mrecord where uid =1 and type<3 UNION select id,addtime,type,sum(number) as number,money from s_mrecord where fuid =1 and type=4 group by oid order by addtime desc [ RunTime:0.015600s ]
+---------------------------------------------------------------
+[ 2017-07-06T16:17:03+08:00 ] 127.0.0.1 127.0.0.1 GET /account/record.html
+[ info ] www.sdb.com/account/record.html [运行时间：0.062400s][吞吐率：16.03req/s] [内存消耗：3,322.20kb] [文件加载：52]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'account',
+    2 => 'record',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3176.400 QQBrowser/9.6.11521.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/account/withdrawcny.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=87v6nllkumd50ci2g68f4d40g3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Account->record[ D:\wamp64\www\sdb\application\index\controller\Account.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:dbname=sdb;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_system` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `s_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_mrecord` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`addtime`,`type`,sum(number) as number,`money` FROM `s_mrecord` WHERE  `uid` = 1  AND `type` = 3 GROUP BY oid UNION select id,addtime,type,number,money from s_mrecord where uid =1 and type<3 UNION select id,addtime,type,sum(number) as number,money from s_mrecord where fuid =1 and type=4 group by oid order by addtime desc [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-07-06T16:18:10+08:00 ] 127.0.0.1 127.0.0.1 GET /account/record.html
+[ info ] www.sdb.com/account/record.html [运行时间：0.077401s][吞吐率：12.92req/s] [内存消耗：3,657.12kb] [文件加载：61]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'account',
+    2 => 'record',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3176.400 QQBrowser/9.6.11521.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/account/withdrawcny.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=87v6nllkumd50ci2g68f4d40g3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Account->record[ D:\wamp64\www\sdb\application\index\controller\Account.php ]
+[ info ] [ VIEW ] D:\wamp64\www\sdb/application/index\view\account\record.html [ array (
+  0 => 'cinfo',
+  1 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:dbname=sdb;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_system` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `s_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_mrecord` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`addtime`,`type`,sum(number) as number,`money` FROM `s_mrecord` WHERE  `uid` = 1  AND `type` = 3 GROUP BY oid UNION select id,addtime,type,number,money from s_mrecord where uid =1 and type<3 UNION select id,addtime,type,sum(number) as number,money from s_mrecord where fuid =1 and type=4 group by oid order by addtime desc [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: poundage[D:\wamp64\www\sdb\runtime\temp\676feff3de5419b5d538ded05c6d623f.php:61]
+---------------------------------------------------------------
+[ 2017-07-06T16:18:56+08:00 ] 127.0.0.1 127.0.0.1 GET /account/record.html
+[ info ] www.sdb.com/account/record.html [运行时间：0.072004s][吞吐率：13.89req/s] [内存消耗：3,432.71kb] [文件加载：55]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'account',
+    2 => 'record',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3176.400 QQBrowser/9.6.11521.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/account/withdrawcny.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=87v6nllkumd50ci2g68f4d40g3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Account->record[ D:\wamp64\www\sdb\application\index\controller\Account.php ]
+[ info ] [ VIEW ] D:\wamp64\www\sdb/application/index\view\account\record.html [ array (
+  0 => 'cinfo',
+  1 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=sdb;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_system` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `s_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_mrecord` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `id`,`addtime`,`type`,sum(number) as number,`money`,`poundage` FROM `s_mrecord` WHERE  `uid` = 1  AND `type` = 3 GROUP BY oid UNION select id,addtime,type,number,money,poundage from s_mrecord where uid =1 and type<3 UNION select id,addtime,type,sum(number) as number,money,poundage from s_mrecord where fuid =1 and type=4 group by oid order by addtime desc [ RunTime:0.004001s ]
+---------------------------------------------------------------
+[ 2017-07-06T16:35:29+08:00 ] 127.0.0.1 127.0.0.1 GET /account/record.html
+[ info ] www.sdb.com/account/record.html [运行时间：0.063400s][吞吐率：15.77req/s] [内存消耗：3,432.71kb] [文件加载：55]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'account',
+    2 => 'record',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3176.400 QQBrowser/9.6.11521.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/account/withdrawcny.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=87v6nllkumd50ci2g68f4d40g3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Account->record[ D:\wamp64\www\sdb\application\index\controller\Account.php ]
+[ info ] [ VIEW ] D:\wamp64\www\sdb/application/index\view\account\record.html [ array (
+  0 => 'cinfo',
+  1 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=sdb;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_system` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `s_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_mrecord` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`addtime`,`type`,sum(number) as number,`money`,`poundage` FROM `s_mrecord` WHERE  `uid` = 1  AND `type` = 3 GROUP BY oid UNION select id,addtime,type,number,money,poundage from s_mrecord where uid =1 and type<3 UNION select id,addtime,type,sum(number) as number,money,poundage from s_mrecord where fuid =1 and type=4 group by oid order by addtime desc [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-07-06T08:49:38+00:00 ] 127.0.0.1 127.0.0.1 GET /account/record.html
+[ info ] www.sdb.com/account/record.html [运行时间：0.047800s][吞吐率：20.92req/s] [内存消耗：1,955.27kb] [文件加载：35]
+[ error ] [64]Cannot redeclare getType()[D:\wamp64\www\sdb\application\common.php:541]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-07-06T08:49:48+00:00 ] 127.0.0.1 127.0.0.1 GET /account/record.html
+[ info ] www.sdb.com/account/record.html [运行时间：0.017600s][吞吐率：56.82req/s] [内存消耗：1,955.27kb] [文件加载：35]
+[ error ] [64]Cannot redeclare getType()[D:\wamp64\www\sdb\application\common.php:541]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-07-06T16:50:22+08:00 ] 127.0.0.1 127.0.0.1 GET /account/record.html
+[ info ] www.sdb.com/account/record.html [运行时间：0.063400s][吞吐率：15.77req/s] [内存消耗：3,660.16kb] [文件加载：61]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'account',
+    2 => 'record',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3176.400 QQBrowser/9.6.11521.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/account/withdrawcny.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=87v6nllkumd50ci2g68f4d40g3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Account->record[ D:\wamp64\www\sdb\application\index\controller\Account.php ]
+[ info ] [ VIEW ] D:\wamp64\www\sdb/application/index\view\account\record.html [ array (
+  0 => 'cinfo',
+  1 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=sdb;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_system` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `s_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_mrecord` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`addtime`,`type`,sum(number) as number,`money`,`poundage` FROM `s_mrecord` WHERE  `uid` = 1  AND `type` = 3 GROUP BY oid UNION select id,addtime,type,number,money,poundage from s_mrecord where uid =1 and type<3 UNION select id,addtime,type,sum(number) as number,money,poundage from s_mrecord where fuid =1 and type=4 group by oid order by addtime desc [ RunTime:0.000000s ]
+[ error ] [2]gettype() expects exactly 1 parameter, 0 given[D:\wamp64\www\sdb\runtime\temp\676feff3de5419b5d538ded05c6d623f.php:59]
+---------------------------------------------------------------
+[ 2017-07-06T16:50:29+08:00 ] 127.0.0.1 127.0.0.1 GET /account/record.html
+[ info ] www.sdb.com/account/record.html [运行时间：0.080000s][吞吐率：12.50req/s] [内存消耗：3,660.29kb] [文件加载：61]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'account',
+    2 => 'record',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3176.400 QQBrowser/9.6.11521.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/account/withdrawcny.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=87v6nllkumd50ci2g68f4d40g3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Account->record[ D:\wamp64\www\sdb\application\index\controller\Account.php ]
+[ info ] [ VIEW ] D:\wamp64\www\sdb/application/index\view\account\record.html [ array (
+  0 => 'cinfo',
+  1 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:dbname=sdb;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_system` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `s_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_mrecord` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`addtime`,`type`,sum(number) as number,`money`,`poundage` FROM `s_mrecord` WHERE  `uid` = 1  AND `type` = 3 GROUP BY oid UNION select id,addtime,type,number,money,poundage from s_mrecord where uid =1 and type<3 UNION select id,addtime,type,sum(number) as number,money,poundage from s_mrecord where fuid =1 and type=4 group by oid order by addtime desc [ RunTime:0.000000s ]
+[ error ] [2]Missing argument 1 for getDType(), called in D:\wamp64\www\sdb\runtime\temp\676feff3de5419b5d538ded05c6d623f.php on line 59 and defined[D:\wamp64\www\sdb\application\common.php:538]
+---------------------------------------------------------------
+[ 2017-07-06T16:50:34+08:00 ] 127.0.0.1 127.0.0.1 GET /account/record.html
+[ info ] www.sdb.com/account/record.html [运行时间：0.095600s][吞吐率：10.46req/s] [内存消耗：3,610.91kb] [文件加载：57]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'account',
+    2 => 'record',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3176.400 QQBrowser/9.6.11521.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/account/withdrawcny.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=87v6nllkumd50ci2g68f4d40g3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Account->record[ D:\wamp64\www\sdb\application\index\controller\Account.php ]
+[ info ] [ VIEW ] D:\wamp64\www\sdb/application/index\view\account\record.html [ array (
+  0 => 'cinfo',
+  1 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:dbname=sdb;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_system` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `s_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_mrecord` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`addtime`,`type`,sum(number) as number,`money`,`poundage` FROM `s_mrecord` WHERE  `uid` = 1  AND `type` = 3 GROUP BY oid UNION select id,addtime,type,number,money,poundage from s_mrecord where uid =1 and type<3 UNION select id,addtime,type,sum(number) as number,money,poundage from s_mrecord where fuid =1 and type=4 group by oid order by addtime desc [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-07-06T16:56:36+08:00 ] 127.0.0.1 127.0.0.1 GET /account/record.html
+[ info ] www.sdb.com/account/record.html [运行时间：0.080001s][吞吐率：12.50req/s] [内存消耗：3,434.16kb] [文件加载：55]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'account',
+    2 => 'record',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3176.400 QQBrowser/9.6.11521.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/account/withdrawcny.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=87v6nllkumd50ci2g68f4d40g3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Account->record[ D:\wamp64\www\sdb\application\index\controller\Account.php ]
+[ info ] [ VIEW ] D:\wamp64\www\sdb/application/index\view\account\record.html [ array (
+  0 => 'cinfo',
+  1 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:dbname=sdb;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_system` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `s_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_mrecord` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`addtime`,`type`,sum(number) as number,`money`,`poundage` FROM `s_mrecord` WHERE  `uid` = 1  AND `type` = 3 GROUP BY oid UNION select id,addtime,type,number,money,poundage from s_mrecord where uid =1 and type<3 UNION select id,addtime,type,sum(number) as number,money,poundage from s_mrecord where fuid =1 and type=4 group by oid order by addtime desc [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-07-06T16:57:04+08:00 ] 127.0.0.1 127.0.0.1 GET /account/record.html
+[ info ] www.sdb.com/account/record.html [运行时间：0.064400s][吞吐率：15.53req/s] [内存消耗：3,584.70kb] [文件加载：58]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'account',
+    2 => 'record',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3176.400 QQBrowser/9.6.11521.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/account/withdrawcny.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=87v6nllkumd50ci2g68f4d40g3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Account->record[ D:\wamp64\www\sdb\application\index\controller\Account.php ]
+[ info ] [ VIEW ] D:\wamp64\www\sdb/application/index\view\account\record.html [ array (
+  0 => 'cinfo',
+  1 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:dbname=sdb;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_system` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `s_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_mrecord` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`addtime`,`type`,sum(number) as number,`money`,`poundage` FROM `s_mrecord` WHERE  `uid` = 1  AND `type` = 3 GROUP BY oid UNION select id,addtime,type,number,money,poundage from s_mrecord where uid =1 and type<3 UNION select id,addtime,type,sum(number) as number,money,poundage from s_mrecord where fuid =1 and type=4 group by oid order by addtime desc [ RunTime:0.000000s ]
+[ error ] [0]语法解析错误: syntax error, unexpected '?>'[D:\wamp64\www\sdb\runtime\temp\676feff3de5419b5d538ded05c6d623f.php:58]
+---------------------------------------------------------------
+[ 2017-07-06T16:57:46+08:00 ] 127.0.0.1 127.0.0.1 GET /account/record.html
+[ info ] www.sdb.com/account/record.html [运行时间：0.080000s][吞吐率：12.50req/s] [内存消耗：3,659.92kb] [文件加载：60]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'account',
+    2 => 'record',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3176.400 QQBrowser/9.6.11521.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/account/withdrawcny.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=87v6nllkumd50ci2g68f4d40g3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Account->record[ D:\wamp64\www\sdb\application\index\controller\Account.php ]
+[ info ] [ VIEW ] D:\wamp64\www\sdb/application/index\view\account\record.html [ array (
+  0 => 'cinfo',
+  1 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:dbname=sdb;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_system` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `s_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_mrecord` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`addtime`,`type`,sum(number) as number,`money`,`poundage` FROM `s_mrecord` WHERE  `uid` = 1  AND `type` = 3 GROUP BY oid UNION select id,addtime,type,number,money,poundage from s_mrecord where uid =1 and type<3 UNION select id,addtime,type,sum(number) as number,money,poundage from s_mrecord where fuid =1 and type=4 group by oid order by addtime desc [ RunTime:0.000000s ]
+[ error ] [0]致命错误: Call to undefined function 2017-07-06 16:57:46()[D:\wamp64\www\sdb\runtime\temp\676feff3de5419b5d538ded05c6d623f.php:58]
+---------------------------------------------------------------
+[ 2017-07-06T16:57:54+08:00 ] 127.0.0.1 127.0.0.1 GET /account/record.html
+[ info ] www.sdb.com/account/record.html [运行时间：0.080000s][吞吐率：12.50req/s] [内存消耗：3,584.70kb] [文件加载：58]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'account',
+    2 => 'record',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3176.400 QQBrowser/9.6.11521.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/account/withdrawcny.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=87v6nllkumd50ci2g68f4d40g3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Account->record[ D:\wamp64\www\sdb\application\index\controller\Account.php ]
+[ info ] [ VIEW ] D:\wamp64\www\sdb/application/index\view\account\record.html [ array (
+  0 => 'cinfo',
+  1 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:dbname=sdb;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_system` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `s_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_mrecord` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`addtime`,`type`,sum(number) as number,`money`,`poundage` FROM `s_mrecord` WHERE  `uid` = 1  AND `type` = 3 GROUP BY oid UNION select id,addtime,type,number,money,poundage from s_mrecord where uid =1 and type<3 UNION select id,addtime,type,sum(number) as number,money,poundage from s_mrecord where fuid =1 and type=4 group by oid order by addtime desc [ RunTime:0.000000s ]
+[ error ] [0]语法解析错误: syntax error, unexpected '?>'[D:\wamp64\www\sdb\runtime\temp\676feff3de5419b5d538ded05c6d623f.php:58]
+---------------------------------------------------------------
+[ 2017-07-06T17:00:31+08:00 ] 127.0.0.1 127.0.0.1 GET /account/record.html
+[ info ] www.sdb.com/account/record.html [运行时间：0.063004s][吞吐率：15.87req/s] [内存消耗：3,611.11kb] [文件加载：57]
+[ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'account',
+    2 => 'record',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.sdb.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3176.400 QQBrowser/9.6.11521.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.sdb.com/account/withdrawcny.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=87v6nllkumd50ci2g68f4d40g3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Account->record[ D:\wamp64\www\sdb\application\index\controller\Account.php ]
+[ info ] [ VIEW ] D:\wamp64\www\sdb/application/index\view\account\record.html [ array (
+  0 => 'cinfo',
+  1 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=sdb;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_system` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `s_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `s_mrecord` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `id`,`addtime`,`type`,sum(number) as number,`money`,`poundage` FROM `s_mrecord` WHERE  `uid` = 1  AND `type` = 3 GROUP BY oid UNION select id,addtime,type,number,money,poundage from s_mrecord where uid =1 and type<3 UNION select id,addtime,type,sum(number) as number,money,poundage from s_mrecord where fuid =1 and type=4 group by oid order by addtime desc [ RunTime:0.001000s ]

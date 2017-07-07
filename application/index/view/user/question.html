@@ -14,20 +14,44 @@
 
 <div>
 	发起提问
+<form id="sendQuestion">
+	<div>
+		问题描述：<textarea name="description" style="width: 300px;height:200px; "></textarea>
+	</div>
+	<div>
+		截图：<input type="file" name="img">
+	</div>
+	<div>
+		姓名：<input type="text" name="name" value="{$userInfo.realname}">
+	</div>
+	<div>
+		联系电话：<input type="text" name="mobile" value="{$userInfo.mobile}">
+	</div>
+	<button type="button" id="sendQ">提交</button>
+</form>
+<script type="text/javascript">
 
-	<div>
-		问题描述：<input type="text" name="">
-	</div>
-	<div>
-		截图：<input type="file" name="">
-	</div>
-	<div>
-		姓名：<input type="text" name="">
-	</div>
-	<div>
-		联系电话：<input type="text" name="">
-	</div>
 
+$('#sendQ').click(function(event) {
+	var data = $("#sendQuestion").serializeArray();
+
+    postData = {};
+    $(data).each(function(i){
+       postData[this.name] = this.value;
+    });
+    
+    $.post("{:url('User/getQuestion')}", postData, function(res) {
+    	if(res['status']==1){
+    		alert('成功');
+    		
+    	}else{
+    		alert('失败');
+    	}
+    });
+
+});
+	
+</script>
 
 </div>
 {include file="./public/footer" /}

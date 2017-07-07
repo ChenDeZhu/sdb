@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:57:"D:\wamp64\www\sdb/application/index\view\trade\index.html";i:1499402277;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\header.html";i:1499405893;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\footer.html";i:1498450778;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:57:"D:\wamp64\www\sdb/application/index\view\user\notice.html";i:1498456591;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\header.html";i:1499133169;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\footer.html";i:1498450778;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,8 +34,22 @@
 	</ul>
 </nav>
 <div class="clear"></div>
-<button type="button" onclick="javascript:history.go(-1);">返回</button>
-	交易中心
+<hr>
+<div>
+	<ul>
+		<li><a href="<?php echo url('User/index'); ?>">安全中心</a></li>
+		<li><a href="<?php echo url('User/chinaID'); ?>">身份认证</a></li>
+		<li><a href="<?php echo url('User/notice'); ?>">通知设置</a></li>
+		<li><a href="<?php echo url('User/question'); ?>">发起提问</a></li>
+		<li><a href="<?php echo url('User/questionList'); ?>">我的问题列表</a></li>
+		<li><a href="<?php echo url('User/index'); ?>">FAQ</a></li>
+		<li><a href="<?php echo url('User/index'); ?>">论坛</a></li>
+	</ul>
+</div>
 
+<div>
+	各种通知设置
+
+</div>
 </body>
 </html>

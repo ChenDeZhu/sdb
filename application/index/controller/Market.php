@@ -1,6 +1,6 @@
 <?php
 namespace app\index\controller;
-use think\Contrller;
+use think\Controller;
 use think\Db;
 use think\cache\driver\Redis;
 /*行情图表*/
@@ -11,6 +11,7 @@ class Market extends Common{
 		$where = [
 			'bid'=>$bid,
 			'status'=>0,
+			
 		];
 		$uid = input('session.uid');
 		echo $uid;
@@ -70,4 +71,10 @@ class Market extends Common{
 		$this->assign('dcurrency',$dcurrency);
 		return $this->fetch();
 	}
+
+	public function fullKline(){
+		return $this->fetch();
+	}
+
+
 }

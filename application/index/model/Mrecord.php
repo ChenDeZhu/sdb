@@ -1,7 +1,7 @@
 <?php
 namespace app\index\model;
 use think\Model;
-class Deal_b extends Model{
+class Mrecord extends Model{
 
 	protected $pk = 'id';
 
@@ -11,7 +11,7 @@ class Deal_b extends Model{
 	 * @return [type]        [今日最高成交价]
 	 */
 	public function getMax($where){
-		$max = $this->where($where)->max('price');
+		$max = $this->where($where)->max('money');
 		return $max;
 	}
 
@@ -21,7 +21,7 @@ class Deal_b extends Model{
 	 * @return [type]        [今日最低成交价]
 	 */
 	public function getMin($where){
-		$min = $this->where($where)->min('price');
+		$min = $this->where($where)->min('money');
 		return $min;
 	}
 	/**
@@ -42,7 +42,7 @@ class Deal_b extends Model{
 	 * @return [type]        [最近成交价]
 	 */
 	public function getRecently($where){
-		$recently = $this->where($where)->limit('1')->order('addtime desc')->value('price');
+		$recently = $this->where($where)->limit('1')->order('addtime desc')->value('money');
 		return $recently;
 	}
 	public function getBName($where){

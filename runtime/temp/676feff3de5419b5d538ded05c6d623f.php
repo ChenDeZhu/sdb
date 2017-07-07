@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:59:"D:\wamp64\www\sdb/application/index\view\account\index.html";i:1499320495;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\header.html";i:1499405893;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\footer.html";i:1498450778;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:60:"D:\wamp64\www\sdb/application/index\view\account\record.html";i:1499331624;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\header.html";i:1499405893;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\footer.html";i:1498450778;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,8 +44,25 @@
 		<li><a href="tencent://message/?uin=420021436&amp;Site=http://www.muye3.com&amp;Menu=yes">在线咨询</a></li>
 	</ul>
 </div>
-网银汇款充值
-
+账单明细
+<table>
+	<thead>
+		<tr>
+			<td>成交时间</td>
+			<td>类型</td>
+			<td>数量</td>
+			<td>手续费</td>
+		</tr>
+	</thead>
+	<?php if(is_array($list) || $list instanceof \think\Collection || $list instanceof \think\Paginator): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+		<tr>
+			<td><?php echo date('Y-m-d H:i:s',$vo['addtime']); ?></td>
+			<td><?php echo getDType($vo['type']); ?></td>
+			<td><?php echo $vo['number']; ?></td>
+			<td><?php echo $vo['poundage']; ?></td>
+		</tr>
+	<?php endforeach; endif; else: echo "" ;endif; ?>
+</table>
 
 
 

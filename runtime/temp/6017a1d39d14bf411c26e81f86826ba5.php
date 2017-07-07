@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:58:"D:\wamp64\www\sdb/application/index\view\market\index.html";i:1499243810;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\header.html";i:1499133169;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\footer.html";i:1498450778;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:58:"D:\wamp64\www\sdb/application/index\view\market\index.html";i:1499393979;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\header.html";i:1499405893;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\footer.html";i:1498450778;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,6 +34,7 @@
 	</ul>
 </nav>
 <div class="clear"></div>
+<button type="button" onclick="javascript:history.go(-1);">返回</button>
 行情图表
 <style type="text/css" >
 
@@ -69,6 +70,34 @@
 		</button>
 	</div>
 </div>
+<hr>
+
+<div id="klineImage" style="width:800px;display:block;height:480px;margin:0 auto; position:relative;" class="clear klineImage">
+		
+		    
+		    <div class="kLineBody" id="kLineBody">
+		        <script type="text/javascript">
+		            function iframe_onload() {
+		                if(window.loadKline_iframe==undefined) {
+		                    setTimeout(iframe_onload,200);
+		                }else {
+		                    loadKline_iframe();
+		                }
+		            }
+		        </script>
+		        <div class="marketImageNew" id="marketImageNew">
+		            <iframe id="kline_iframe" onload="javascript:iframe_onload();" style="border:0; width:100%;height:100%;" src="<?php echo url('fullKline'); ?>"></iframe>
+		        	<a class="openfullscreen" id="openfullscreen" href="javascript:void(0)" onclick="javascript:klineFullScreenOpen()" title="全屏" style="display:block;"></a>
+		        	<a class="closefullscreen" id="closefullscreen" href="javascript:void(0)" onclick="javascript:klineFullScreenClose()" title="退出全屏" style="display:none"></a>
+		        </div>
+		    </div>
+		    <div style="display: none"><!-- 隐藏域 赋值操作-->
+		        <span id="klineDepth"></span>
+		    </div>
+		    
+		</div>
+
+
 <hr>
 <div class="weituo">
 	委托信息
@@ -139,6 +168,12 @@
 		</table>
 	</div>
 </div>
+
+
+
+
+
+
 	<script type="text/javascript"> 
         // 假设服务端ip为127.0.0.1  
             var ws = new WebSocket('ws://127.0.0.1:2347');
@@ -238,6 +273,6 @@
 	            ws.send(data);
             });
     </script>
-    
+
 </body>
 </html>

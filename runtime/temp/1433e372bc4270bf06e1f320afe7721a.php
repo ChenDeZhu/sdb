@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:59:"D:\wamp64\www\sdb/application/index\view\account\index.html";i:1499320495;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\header.html";i:1499405893;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\footer.html";i:1498450778;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:56:"D:\wamp64\www\sdb/application/index\view\user\index.html";i:1498456567;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\header.html";i:1499405893;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\footer.html";i:1498450778;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,19 +35,30 @@
 </nav>
 <div class="clear"></div>
 <button type="button" onclick="javascript:history.go(-1);">返回</button>
-资金管理
+<hr>
 <div>
 	<ul>
-		<li><a href="<?php echo url('Account/index'); ?>">充值</a></li>
-		<li><a href="<?php echo url('Account/withdrawCny'); ?>">提现</a></li>
-		<li><a href="<?php echo url('Account/record'); ?>">明细</a></li>
-		<li><a href="tencent://message/?uin=420021436&amp;Site=http://www.muye3.com&amp;Menu=yes">在线咨询</a></li>
+		<li><a href="<?php echo url('User/index'); ?>">安全中心</a></li>
+		<li><a href="<?php echo url('User/chinaID'); ?>">身份认证</a></li>
+		<li><a href="<?php echo url('User/notice'); ?>">通知设置</a></li>
+		<li><a href="<?php echo url('User/question'); ?>">发起提问</a></li>
+		<li><a href="<?php echo url('User/questionList'); ?>">我的问题列表</a></li>
+		<li><a href="<?php echo url('User/index'); ?>">FAQ</a></li>
+		<li><a href="<?php echo url('User/index'); ?>">论坛</a></li>
 	</ul>
 </div>
-网银汇款充值
 
+<div>
+	<ul>
+		<li>手机绑定</li>
+		<li>资金密码</li>
+		<li>邮箱验证</li>
+	</ul>
+	<div>
+		登陆记录
+		最近十次登陆
+	</div>
 
-
-
+</div>
 </body>
 </html>

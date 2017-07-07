@@ -18,12 +18,14 @@ class Index extends Common{
 		// 	$where['bid'] = 1;
 		// }
 		// //获取所有币种的信息
-		// $list = db('currency')->order('id')->select();
-		// foreach ($list as $k => $v) {
-		// 	$where['bid'] = $v['id'];
-		// 	$data[] = model('deal')->getAll($where);
-		// }
-		$this->assign('data',$data='');
+		$list = db('currency')->order('id')->select();
+		foreach ($list as $k => $v) {
+			$where['bid'] = $v['id'];
+			$data[] = model('mrecord')->getAll($where);
+		}
+		 
+		
+		$this->assign('data',$data);
 		return $this->fetch();
 	}
 }

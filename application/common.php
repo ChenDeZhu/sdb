@@ -520,4 +520,22 @@ function form_editor($field, $value='')
         $str .= '</script>';
         return $str;
     }
-    
+
+/**
+ * [getPart 截取部分问题描述]
+ * @param  [string] $value [问题描述]
+ * @return [string]        [截取完的问题描述]
+ */
+function getPart($value){
+    $value = mb_substr($value,0,10,'utf-8');
+    return $value;
+}
+/**
+ * [getType 获取交易类型]
+ * @param  [int] $value []
+ * @return [string]        [对应的内容]
+ */
+function getDType($value){
+    $status = ['1'=>'充值','2'=>'提现','3'=>'交易支出','4'=>'交易收入'];
+    return $status[$value];
+}

@@ -11,29 +11,15 @@
 		<li><a href="{:url('User/index')}">论坛</a></li>
 	</ul>
 </div>
-
-<div>
-	我发的问题列表
-
-	<table>
-		<thead>
-			<tr>
-				<th>问题编号</th>
-				<th>问题描述</th>
-				<th>提交时间</th>
-				<th>问题状态</th>
-				<th>操作</th>
-			</tr>
-		</thead>
-		{volist name="list" id='vo'}
-		<tr>
-			<td>{$vo.id}</td>
-			<td>{$vo.description|getPart}...</td>
-			<td>{$vo.addtime}</td>
-			<td>{$vo.status}</td>
-			<td><a href="{:url('user/questionDetail',array('id'=>$vo['id']))}">查看</a>|<a href="#">删除</a></td>
-		</tr>
-		{/volist}
-	</table>
-</div>
+问题详情页
+<br>
+问题编号：{$detail.id}
+<br>
+问题状态：{$detail.status}
+<br>
+提交时间：{$detail.addtime}
+<br>
+内容概要:{$detail.description}
+<br>
+客服回复内容:{$detail.content}
 {include file="./public/footer" /}

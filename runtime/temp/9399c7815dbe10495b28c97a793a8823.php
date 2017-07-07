@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:57:"D:\wamp64\www\sdb/application/index\view\trade\index.html";i:1499402277;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\header.html";i:1499405893;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\footer.html";i:1498450778;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:58:"D:\wamp64\www\sdb/application/index\view\shequ\detail.html";i:1499405885;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\header.html";i:1499405893;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\footer.html";i:1498450778;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,7 +35,13 @@
 </nav>
 <div class="clear"></div>
 <button type="button" onclick="javascript:history.go(-1);">返回</button>
-	交易中心
 
+
+	<div>类别：<?php echo $detail['title']; ?></div>
+	<div>发布者：<?php echo $detail['nickname']; ?></div>
+	<div>发布时间：<?php echo date("Y-m-d H:i",$detail['addtime']); ?></div>
+	<div>点击数：<?php echo $detail['click']; ?></div>
+
+	<div>内容：<?php echo $detail['content']; ?></div>
 </body>
 </html>

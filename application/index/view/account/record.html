@@ -8,8 +8,25 @@
 		<li><a href="tencent://message/?uin=420021436&amp;Site=http://www.muye3.com&amp;Menu=yes">在线咨询</a></li>
 	</ul>
 </div>
-网银汇款充值
-
+账单明细
+<table>
+	<thead>
+		<tr>
+			<td>成交时间</td>
+			<td>类型</td>
+			<td>数量</td>
+			<td>手续费</td>
+		</tr>
+	</thead>
+	{volist name="list" id="vo"}
+		<tr>
+			<td>{$vo.addtime|date='Y-m-d H:i:s',###}</td>
+			<td>{$vo.type|getDType}</td>
+			<td>{$vo.number}</td>
+			<td>{$vo.poundage}</td>
+		</tr>
+	{/volist}
+</table>
 
 
 

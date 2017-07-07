@@ -14,11 +14,30 @@
 
 <div>
 	<ul>
-		<li>姓名：<input type="text" name="name" placeholder="请输入真实名字"></li>
-		<li>国籍</li>
-		<li>身份证号：<input type="text" name="ID" placeholder="请输入本人身份证号"></li>
+		<li>姓名：<input type="text" id="name" placeholder="请输入真实名字"></li>
+		<li>国籍：<select><option>中国（China）</option></select></li>
+		<li>身份证号：<input type="text" id="cardno" placeholder="请输入本人身份证号"></li>
+		<li>
+			<input type="checkbox" id="realInfoMake" value=""> 我承诺提交的信息属于我本人。  
+		</li>
 	</ul>
+	<button type="button" id="submitChinaIdentityBtn" onclick="javascript:submitChinaIdentity();">提交</button>
 	
 
 </div>
+<script type="text/javascript">
+	function submitChinaIdentity(){
+		
+		data = {};
+		data['name'] = $('#name').val();
+		data['cardno'] = $('#cardno').val();
+		url = "{:url('User/chinaIdentity')}"
+		$.post(url, data,
+		 function(data) {
+			console.log(data);
+		});
+
+	} 
+
+</script>
 {include file="./public/footer" /}

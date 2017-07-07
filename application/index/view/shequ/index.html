@@ -1,0 +1,17 @@
+{include file="./public/header"}
+社区
+
+
+{volist name="list" id='vo'}
+<div>
+	<a href="{:url('Shequ/detail',array('id'=>$vo.id))}"><div>标题：{$vo.title}</div></a>
+	<div>类别：{$vo.name}</div>
+	<div>发布者：{$vo.nickname}</div>
+	<div>发布时间：{$vo.addtime|date="Y-m-d H:i",###}</div>
+	<div>点击数：{$vo.click}</div>
+</div>
+<hr>
+{/volist}
+{$page}
+
+{include file="./public/footer"}
