@@ -32,6 +32,7 @@
 		data['name'] = $('#name').val();
 		data['cardno'] = $('#cardno').val();
 		url = "{:url('User/chinaIdentity')}"
+		
 		$.post(url, data,
 		 function(data) {
 			console.log(data);

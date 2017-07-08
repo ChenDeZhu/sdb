@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:59:"D:\wamp64\www\sdb/application/index\view\account\index.html";i:1499320495;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\header.html";i:1499405893;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\footer.html";i:1498450778;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:59:"D:\wamp64\www\sdb/application/index\view\account\index.html";i:1499480114;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\header.html";i:1499405893;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\footer.html";i:1498450778;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,10 +44,32 @@
 		<li><a href="tencent://message/?uin=420021436&amp;Site=http://www.muye3.com&amp;Menu=yes">在线咨询</a></li>
 	</ul>
 </div>
+充值钱也要身份认证
 网银汇款充值
 
-
-
-
+<div>姓名：<input type="text" id="name"></div>
+<div>国籍：<select><option value="">中国（China）</option>
+</select></div>
+<div>身份证号：<input type="text" id="cardno"></div>
+<div>选择汇款银行:<select>
+<option>中国银行</option>
+<option>平安银行</option>
+<option>中国建设银行</option>
+<option>招商银行</option>
+</select></div>
+<div>汇款人银行卡号:<input type="text" id="bankcardno"></div>
+<button type="button" onclick="javascript:verifyIdentityBindBankCard();">提交</button>
+<script type="text/javascript">
+	function verifyIdentityBindBankCard(){
+		data = {};
+		data['name'] = $('#name').val();
+		data['cardno'] = $('#cardno').val();
+		data['bankcardno'] = $('#bankcardno').val();
+		url = "<?php echo url('User/verifyIdentityBindBankCard'); ?>"
+		$.post(url, data, function(data) {
+			console.log(data);
+		});
+	}
+</script>
 </body>
 </html>

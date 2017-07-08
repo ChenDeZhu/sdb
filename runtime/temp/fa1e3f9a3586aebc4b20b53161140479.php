@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:57:"D:\wamp64\www\sdb/application/index\view\user\notice.html";i:1498456591;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\header.html";i:1499133169;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\footer.html";i:1498450778;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:57:"D:\wamp64\www\sdb/application/index\view\user\notice.html";i:1498456591;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\header.html";i:1499405893;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\footer.html";i:1498450778;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,6 +34,7 @@
 	</ul>
 </nav>
 <div class="clear"></div>
+<button type="button" onclick="javascript:history.go(-1);">返回</button>
 <hr>
 <div>
 	<ul>

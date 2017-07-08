@@ -1,0 +1,29 @@
+[ 2017-07-08T07:59:30+08:00 ][ info ] [ LANG ] D:\wamp64\www\sdb\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+[ 2017-07-08T07:59:30+08:00 ][ info ] [ LANG ] D:\wamp64\www\sdb/application/lang\zh-cn.php
+[ 2017-07-08T07:59:30+08:00 ][ info ] [ BIND ] 'socket'
+[ 2017-07-08T07:59:30+08:00 ][ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'socket',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ 2017-07-08T07:59:30+08:00 ][ info ] [ HEADER ] array (
+)
+[ 2017-07-08T07:59:30+08:00 ][ info ] [ PARAM ] array (
+)
+[ 2017-07-08T07:59:30+08:00 ][ info ] [ DB ] INIT mysql
+[ 2017-07-08T07:59:30+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.031200s ] mysql:dbname=sdb;host=localhost;port=3306;charset=utf8
+[ 2017-07-08T07:59:30+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `s_system` [ RunTime:0.031200s ]
+[ 2017-07-08T07:59:30+08:00 ][ sql ] [ SQL ] SELECT * FROM `s_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ 2017-07-08T07:59:30+08:00 ][ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ 2017-07-08T07:59:30+08:00 ][ info ] [ RUN ] app\socket\controller\Index->index[ D:\wamp64\www\sdb\application\socket\controller\Index.php ]

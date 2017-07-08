@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:58:"D:\wamp64\www\sdb/application/index\view\market\index.html";i:1499393979;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\header.html";i:1499405893;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\footer.html";i:1498450778;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:58:"D:\wamp64\www\sdb/application/index\view\market\index.html";i:1499491357;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\header.html";i:1499405893;s:61:"D:\wamp64\www\sdb/application/index\view\.\public\footer.html";i:1498450778;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,6 +35,8 @@
 </nav>
 <div class="clear"></div>
 <button type="button" onclick="javascript:history.go(-1);">返回</button>
+
+
 行情图表
 <style type="text/css" >
 
@@ -95,9 +97,14 @@
 		        <span id="klineDepth"></span>
 		    </div>
 		    
-		</div>
+</div>
+<hr>
 
-
+<div id="main" style="width: 100%;height:400px;"></div>
+<div id="main1" style="width: 100%;height:400px;"></div>
+<script src="__PUBLIC__/home/echarts.min.js"></script>
+<script src="__PUBLIC__/home/ekline.js"></script>
+<script src="__PUBLIC__/home/ekline1.js"></script>
 <hr>
 <div class="weituo">
 	委托信息

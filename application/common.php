@@ -539,3 +539,68 @@ function getDType($value){
     $status = ['1'=>'充值','2'=>'提现','3'=>'交易支出','4'=>'交易收入'];
     return $status[$value];
 }
+
+
+//发送验证邮件
+/**
+ * [sendmails 发送邮箱]
+ * @param  [type] $type            [提示类型]
+ * @param  [type] $receiveraddress [收件邮箱]
+ * @param  [type] $receivername    [收件人姓名]
+ * @return [type]                  [验证码]
+ */
+function sendmails($type,$receiveraddress,$receivername){//返回验证码
+    //vendor()
+
+    require_once ROOT_PATH.'public/email/verify.php';
+    $data=db('company')->find();
+    $e=[
+        'port'=>$data['e_port'],
+        'host'=>$data['e_host'],
+        'send'=>$data['e_send'],
+        'auth_code'=>$data['e_auth_code'],
+        'sendpwd'=>$data['e_sendpwd'],
+        'sendname'=>$data['e_sendname'],
+        'subject'=>$data['e_subject'],
+        'code'=>rand(100000,999999),
+        'receiveraddress'=>'15068636372@163.com',
+        'receivername'=>'林俊旭'
+    ];
+    switch($type){
+        case 0://注册
+            $e['content']='您注册账号的验证码如下';break;
+        default://其他
+            $e['content']='您的验证码如下';
+    }
+    $msg=emailbody($receiveraddress,$receivername,$e['content'],$e['code']);
+    require_once VENDOR_PATH.'/phpmailer/class.phpmailer.php';
+    require_once VENDOR_PATH.'/phpmailer/class.smtp.php';
+    //vendor('class.phpmailer.php');
+    //vendor("class.smtp.php");
+    $mail  = new \app\index\controller\PHPMailer();
+
+    $mail->CharSet    ="UTF-8";                 //设定邮件编码，默认ISO-8859-1，如果发中文此项必须设置为 UTF-8
+    $mail->IsSMTP();                            // 设定使用SMTP服务
+    $mail->SMTPAuth   = true;                   // 启用 SMTP 验证功能
+    $mail->SMTPSecure = "ssl";                  // SMTP 安全协议
+    $mail->Host       = $e['host'];       // SMTP 服务器
+    $mail->Port       = $e['port'];                    // SMTP服务器的端口号
+    $mail->Username   = $e['send'];  // SMTP服务器用户名
+    $mail->Password   = $e['auth_code'];        // SMTP服务器密码
+    $mail->SetFrom($e['send'], $e['sendname']);    // 设置发件人地址和名称
+    $mail->AddReplyTo($e['send'], $e['sendname']);
+    // 设置邮件回复人地址和名称
+    $mail->Subject    = $e['subject'];                     // 设置邮件标题
+    $mail->AltBody    = "为了查看该邮件，请切换到支持 HTML 的邮件客户端";
+    // 可选项，向下兼容考虑
+    $mail->MsgHTML($msg);                         // 设置邮件内容
+    $mail->AddAddress($receiveraddress);
+//$mail->AddAttachment("images/phpmailer.gif"); // 附件
+    //dump($mail);
+    if(!$mail->Send()) {
+        echo "发送失败：".$mail->ErrorInfo;
+    } else {
+        echo "恭喜，邮件发送成功！";
+    }
+    return $e['code'];
+}

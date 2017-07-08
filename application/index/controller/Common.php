@@ -11,7 +11,7 @@ class Common extends Controller{
 	public function _initialize(){
 		$cinfo = db('system')->find(1);
 		$this->assign('cinfo',$cinfo);
-		Session::set('uid',1);
+		Session::set('uid',3);
 	}
 	/**
 	 * [验证登陆]
